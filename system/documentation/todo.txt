@@ -1,0 +1,14 @@
+test, dev corpus schemas DONE
+paper outline
+- abstract
+dockerfile
+- npm, python3, mecab
+python script for processing frequency data DONE
+scoring scripts
+mecab interfaces
+test, dev corpus
+- jlpttestforyou N1-5 reading DONE
+- remove [num], (num), page breaks, (注num), [ num ]
+grammar list data
+script for grammar to regex
+script for kanji raw data DONE
