@@ -1,0 +1,228 @@
+あまり + Verb-ないform
+あまり + Noun + じゃない/ではない
+あまり + いadj (－い) + くない
+あまり + なadj + じゃない/ではない
+
+Verb-casual, past + 後（で）
+Noun + の後（で）
+
+Verb-casual, past + 場合
+Noun + の場合
+なadj + 場合
+
+Verb-てform + ばかり
+Noun + ばかり
+
+Verb-casual + だけで
+Noun + だけで
+
+Noun + でも
+
+いadj (－い) + がる
+なadj + がる
+
+Noun (time) + ごろ: around, about
+Verb-casual + ころ: when
+Noun + のころ: when
+Adjective + ころ: when
+
+Verb-casual + はずだ
+いadjective + はずだ
+なadjective + なはずだ
+Noun + のはずだ
+
+Verb-dictionary form + 必要がある
+
+Noun + が欲しい
+
+Sentence + じゃん/じゃない/じゃないか/ではないか
+
+Verb-casual + かどうか
+Noun + かどうか
+いadj + かどうか
+なadj + かどうか
+
+Verb + かもしれない
+Noun + かもしれない
+いadj + かもしれない
+なadj + かもしれない
+
+Sentence + かな
+
+Verb-ますstem + かた (方)
+
+Sentence + かしら
+
+Verb-dictionary form + ことができる
+
+Verb-casual, non-past + ことになる
+
+Verb-casual, non-past + ことにする
+
+Verb-dictionary form + までに
+Noun + までに
+
+Noun + （だった）みたい（だ）
+Verb-casual + みたい（だ）
+いadj + みたい（だ）
+なadj + （だった）みたい（だ）
+
+Noun + みたいに + Verb/Adjective
+Noun + みたいな + Noun
+Verb-casual + みたいに + Verb/Adjective
+Verb-casual + みたいな + Noun
+
+Noun + など
+
+Verb-ますstem + ながら
+
+Verb-ないform + で
+
+なければならない/なければいけない
+きゃならない/なきゃいけない
+
+Verb-ないform  (remove い)  + くてはいけない/くてはならない
+
+Verb-ないform (remove い) + くて(も)いい
+
+Verb-casual + (の)なら
+Noun + (の)なら
+いadj + (の)なら
+なadj + (の)なら
+
+Verb-ますstem + なさい
+
+Verb-ますstem + にくい
+
+Noun + の中で
+
+Verb-dictionary form + のに
+
+Verb-casual + のに
+Noun + なのに
+いadj + のに
+なadj + なのに
+
+Noun + のような + Noun
+Noun + のように + Verb/Adjective
+
+Noun + おきに
+
+Verb-casual + らしい
+Noun + らしい
+いadj + らしい
+なadj + らしい
+
+いadj （remove い） + さ
+なadj + さ
+
+Verb-casual + し
+いadj + し
+なadj + だし
+Noun + だし
+
+しか + Verb-ないform
+
+そんなに + Verb / Adjective
+
+Phrase 1 + それでも + Phrase 2
+
+Verb-casual + そうだ
+Noun + だそうだ
+いadj + そうだ
+なadj + だそうだ
+
+Verb-ますstem + そうだ
+いadjective (remove い) + そうだ
+なadjective + そうだ
+
+Verb-ます stem + すぎる
+いadjective (remove い) + すぎる
+なadjective + すぎる
+
+Verb-casual, past + ばかり
+
+Verb-ますstem + たがる/たがっている
+
+Verb-casual, past + ら
+Noun + だったら
+いadj-たform + ら
+なadj + だったら
+
+Verb-casual, past + り + verb-casual, past + り + する
+Noun + だったり + Noun + だったり
+いadj（－い） + かったり + いadj（－い） + かったり
+なadj + だったり + なadj + だったり
+
+Verb-casual, past + ところ
+
+Verb-てform + やる/あげる/さしあげる
+
+Verb-てform + ある
+
+Verb-ないform + でほしい
+Verb-てform + ほしい
+
+Verb-てform + いく
+
+全然 + Verb-ないform
+
+Verb-volitional form + と思う
+
+Verb-dictionary form + ようにする
+Verb-ないform + ようにする
+
+Verb-dictionary form + ようになる
+Verb-ないform + ようになる
+
+Verb-casual + ようだ
+いadj + ようだ
+なadj + なようだ
+Noun + のようだ
+
+Noun/Verb-phrase + より　+ adj
+
+Verb-ますstem + やすい
+
+Verb-ますstem + 続ける
+
+Verb/いadj + と思う
+Noun/なadj + だと思う
+
+Verb-casual, non-past + ところ
+
+Verb-casual + 時
+Noun + の時/だった時
+いadjective + 時
+なadjective + な時/だった時
+
+Verb-casual + とか + Verb-casual + とか
+Noun + とか + Noun + とか
+
+Phrase + ということ
+
+Verb-てform + よかった
+Verb-ないform (－い) + くてよかった
+
+Verb-てform + すみません
+
+Verb-てform + しまう
+Verb-てform (－て) + ちゃう
+Verb-てform (－て) + じゃう
+
+Verb-てform + おく
+
+Verb-てform + もらう
+
+Verb-てform + も
+Noun + でも
+いadj + (－い) + くても
+なadj + でも
+
+Verb-てform + みる
+
+Verb-てform + くる
+
+verb-てform + くれる/くださる
+
+Verb-てform + いるところ（だ）

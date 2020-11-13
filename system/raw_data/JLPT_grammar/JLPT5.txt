@@ -1,0 +1,45 @@
+Verb-casual + だけ
+いadj + だけ
+なadj + だけ
+Noun + だけ
+
+Verb-casual + だろう
+い-adjective + だろう
+な-adjective + だろう
+Noun + だろう
+
+Verb-casual past + ほうがいい
+Verb-casual, non-past + ほうがいい
+Verb ない form + ほうがいい
+
+Verb + から
+いadjective + から
+なadjective + だから
+Noun +　だから
+
+けど
+けれど
+けれども
+
+まだ
+
+Verb-dictionary form + 前に
+Noun + の前に
+
+ないでください
+
+Verb-plain past + ことがある
+
+Verb てform + ください
+
+Verb-てform + もいい
+いadjective (remove い)  + くてもいい
+なadjective + でもいい
+Noun + でもいい
+
+Verb-てform + はいけない/ちゃいけない/はだめ/ちゃだめ
+
+Verb-casual + つもりだ
+なadj + なつもりだ
+いadj + つもりだ
+Noun + のつもりだ
