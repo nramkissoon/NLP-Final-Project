@@ -1,0 +1,305 @@
+Verb-ばconditional + (same) Verb + ほど
+いadj-ばconditional + (same) いadj + ほど
+なadj + なら + (same)なadj + なほど
+
+Verb-ばconditional form + いい
+
+erb-casual + ばかりか/ばかりでなく
+Noun + ばかりか/ばかりでなく
+いadj + ばかりか/ばかりでなく
+なadj + なばかりか/なばかりでなく
+
+Verb-ば conditional + よかった（のに）
+
+Verb-dictionary form + べき/べきだ
+
+別に + Verb-ないform
+別に + Noun + ではない
+別に + いadj (remove い) + くない
+別に + なadj + ではない
+
+Noun + 中
+
+Noun + だらけ
+
+Verb-casual, non-past + どころか
+いadjective + どころか
+なadjective + (な)どころか
+Noun + どころか
+
+どんなに + Verb-てform + も
+どんな + Noun + でも
+どんなに + いadj + （－い）くても
+どんなに + なadj + でも
+
+Verb-casual + ふりをする
+Noun + のふりをする
+いadj + ふりをする
+なadj + なふりをする
+
+ふと + action
+
+Verb-ますstem + がちだ
+Noun + がちだ
+
+Verb-ます stem + がたい
+
+Verb-ますstem + 気味
+Noun + 気味
+
+Verb-casual, non-past + ほど
+なadj + なほど/であるほど
+Noun + ほど
+いadj + ほど
+
+いくら + Verb-てform + も
+いくら + Noun + でも
+いくら + いadj (remove い) + くても
+いくら + なadj + でも
+
+一方
+
+Verb-ますstem + かける/かけの
+
+Verb-casual + 代わりに
+Noun + の代わりに
+
+Verb-casual, past + っけ
+Noun + だっけ/だったっけ
+いadj + (-い) + かったっけ
+なadj + だっけ/だったっけ
+
+決して+ Noun + ではない
+決して+ Verb-ないform
+決して+ いadj (-い) + くない
+決して+ なadj + ではない
+
+Verb-ますstem + 切る/切れる
+
+Verb-ますstem + 切れない
+
+Verb-casual + きり/っきり
+Noun + きり/っきり
+
+Noun + こそ
+
+Verb-casual, non-past + ことがある
+
+Phrase + ことか
+
+Verb-dictionary form + ことはない
+
+Verb-casual + くらい/ぐらい
+いadjective + くらい/ぐらい
+なadjective + なくらい/ぐらい
+Noun + くらい/ぐらい
+
+Verb-Casual + くせに
+Noun + のくせに
+なadjective + なくせに
+いadjective + くせに
+
+Verb-casual, past + まま
+Verb-ないform + まま
+Noun + のまま
+
+まるで + Verb-casual + よう
+まるで + Noun + のよう
+
+めったに + Verb-ないform
+
+Verb-casual, past + ものだ/もんだ: used to do something
+Verb-casual, non-past + ものだ/もんだ: social norm/an obvious fact
+Adjective + ものだ/もんだ: exclamation
+
+もしかしたら/もしかすると + phrase + かもしれない
+
+Noun + 向き
+
+Noun + 向け
+
+Verb-ますstem + ながら（も）
+Verb-てform + いながら（も）
+Noun + ながら（も）
+Adjective + ながら（も）
+
+Verb-ないform + ことは(も)ない
+Noun + では/じゃ + ないことは(も)ない
+いadj + (-い) + くないことは(も)ない
+なadj + で/じゃ + ないことは(も)ない
+
+Noun + なんて/なんか
+Sentence + なんて
+
+なるべく + action
+
+Result + なぜなら（ば）/なぜかというと + reason
+
+Verb-casual + に違いない
+Noun + に違いない
+なadj + に違いない
+いadj + に違いない
+
+Noun + にかけて（は）
+
+Noun + に関する / に関して
+
+Noun + にかわって/にかわり
+
+Noun + に比べて/に比べると/に比べれば/に比べ
+
+Noun + において/における
+
+Verb-casual + にしては
+Noun + にしては
+
+Verb-casual + にしても
+なadj + (である)にしても
+いadj + にしても
+Noun + (である)にしても
+
+Verb-casual + のに対して/のに対する
+Noun + に対して/に対する
+なadj + な/である + のに対して/に対する
+いadj + のに対して/に対する
+
+Noun + にとって
+
+Noun + について
+
+Verb-dictionary form + につれ/につれて
+Noun + につれ/につれて
+
+Noun + によると/によれば
+
+Noun + によって/により/による
+
+Verb-casual, non-past + 間(に)
+Noun + の間(に)
+いadj + 間(に)
+なadj + な間(に)
+
+Noun + を中心に/を中心として/を中心とした/を中心とする
+
+Verb-casual + おかげで
+いadjective + おかげで
+なadjective + なおかげで
+Noun + のおかげで
+
+おそらく + phrase
+
+Verb-stem + っぱなし
+
+Verb-stem + っぽい
+Noun + っぽい
+いadj (-い) + っぽい
+なadj + っぽい
+
+Noun + さえ/でさえ
+
+Verb-てform + いる最中(に)
+Noun + の最中(に)
+
+Verb-casual + せいで
+Noun + のせいで
+
+Phrase 1 + その結果 + phrase 2
+
+Verb-ますstem + そうもない
+
+Verb-dictionary form + たびに
+Noun + のたびに
+
+Verb-dictionary form + ため（に）
+Noun + のため（に）
+
+Verb-casual, past + らいい
+Verb-casual + といい
+
+確かに + phrase
+
+たとえば + phrase
+
+Verb-casual, past + 結果
+Noun + の結果
+
+Verb-casual, past + とたん（に）
+
+Verb-てform + もかまわない
+Noun + でもかまわない
+いadj (removeい) + くてもかまわない
+なadj + でもかまわない
+
+Verb-dictionary form + 途中で/途中に
+Noun + の途中で/の途中に
+
+Noun + （だ）といっても
+Verb-casual + といっても
+いadj + といっても
+なadj + （だ）といっても
+
+Verb-dictionary form + ということだ
+Phrase + ということだ
+Noun + ということだ
+
+というのは
+
+Noun + というと/といえば/といったら
+
+Verb-casual + というより(は)
+Noun + というより(は)
+いadj + というより(は)
+なadj + というより(は)
+Phrase + というより + Phrase
+
+ところで + new topic
+
+Verb-dictionary form + とおり
+Verb-casual, past + とおり
+Noun + どおり/のとおり
+
+Noun + として
+
+Sentence + とは限らない
+
+Verb-casual + ついでに
+するVerb (without する) + ついでに
+Noun + のついでに
+Sentence 1 + ついでに + sentence 2
+
+Sentence 1 + つまり + Sentence 2
+
+Verb-dictionary form + と共に
+Noun + と共に
+
+Verb-casual + わけだ
+いadjective + わけだ
+なadjective + なわけだ
+Noun + である + わけだ
+
+Verb-casual + わけではない/わけじゃない
+いadjective + わけではない/わけじゃない
+なadjective + なわけではない/なわけじゃない
+Noun + (だ)というわけではない/(だ)というわけじゃない
+
+Verb-casual, non-past + わけがない
+Noun + であるわけがない
+なadj + なわけがない
+いadj + わけがない
+
+Verb-casual, non-past + わけにはいかない
+Verb-ないform + わけにはいかない
+
+Verb-casual + （ような）気がする
+Noun + （のような）気がする
+いadj + （ような）気がする
+なadj + （な）気がする
+
+Verb-dictionary form + ように
+Verb-ないform + ように
+
+Verb-volitional + とする
+
+Verb-ないform (remove ない) + ず(に)
+
+Verb-ないform (remove ない) + ずにはいられない

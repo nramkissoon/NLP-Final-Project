@@ -1,0 +1,328 @@
+あえて + action
+
+あくまでも + Noun/Verb
+
+案の定 + phrase
+
+あらかじめ + Verb-casual, past
+
+Noun + あっての + Noun
+
+場合によっては + sentence
+
+Verb-ばconditional + こそ
+いadj (-い) + ければこそ
+Noun/なadj + であればこそ
+
+Verb-ばconditional + それまでだ
+
+Verb-dictionary form + べからず/べからざる
+
+Noun/いadj（－い） + びる/びて
+Noun/いadj（－い） + びた + Noun
+
+Verb-dictionary form + だに
+Noun + だに
+
+Noun + であれ + Noun + であれ
+Noun + であろうと + Noun + であろうと
+
+Noun/なadj + でも何でもない
+
+Noun + でなくてなんだろう
+
+Verb-casual + のではあるまいか
+Noun + ではあるまいか
+なadj + ではあるまいか
+
+Verb + ではあるまいし/じゃあるまいし
+Noun + ではあるまいし/じゃあるまいし
+
+Noun + ではすまない/ではすまされない
+Verb-casual + ではすまない/ではすまされない
+
+Verb-ますstem + がてら
+Noun + がてら
+
+Verb-dictionary form + が早いか
+
+Verb-casual, past + が最後/ら最後
+
+Verb-casual + ごとく
+Noun + のごとく/ごとき
+
+Noun + ぐるみ
+
+Verb-dictionary form + 羽目になる
+
+Verb-casual + ほうがましだ
+
+いかなる + Noun
+
+Noun + いかんだ/いかんで（は）/いかんによって（は）
+
+Noun + （の）いかんにかかわらず/（の）いかんによらず
+
+いかに + Noun
+いかに + Adj
+いかに + Verb
+
+いかにも + sentence
+
+いまだに + action
+
+いずれにせよ/いずれにしろ/いずれにしても + sentence
+
+Noun + じみた + Noun
+
+Verb-casual + か否か
+Noun + である + か否か
+いadj + か否か
+なadj + である + か否か
+
+Verb-casual + 可能性がある
+Noun + の可能性がある
+
+Noun + かたがた
+
+Verb-dictionary form + かたわら
+Noun + のかたわら
+
+かつて + sentence
+
+Verb-casual + 嫌いがある
+Noun + の嫌いがある
+
+Noun + きっての + Noun
+
+Verb-ばconditional + きりがない
+Verb-dictionary form + ときりがない
+Verb-casual, past + らきりがない
+
+なadj + 極まる/極まりない
+
+極めて + Noun
+極めて + Adj
+
+ことごとく + Verb
+
+Verb-dictionary form + ことなしに（は）
+
+Verb-casual, non-past + ことのないよう（に）
+
+Verb-casual + こととて
+Noun + のこととて
+なadj + なこととて
+
+Verb-dictionary form + くらいなら/ぐらいなら
+
+Noun + くらい/ぐらい + のものだ
+
+Verb-dictionary form + までもない
+
+Verb-dictionary form + まじき
+
+Verb-casual, non-past + (が)まま(に)
+
+Noun + まみれ
+
+まるっきり + Verb-casual
+まるっきり + Noun
+
+Noun + めいた/めいている
+
+もはや + sentence
+
+Noun + を顧みず/も顧みず
+
+Sentence + ものと思われる
+
+Verb-casual + ものとして
+
+Noun + もしくは + Noun
+Verbal Noun + もしくは + Verb
+
+Verb-ないform + までも
+
+Verb-ないform + もの（だろう）か
+
+Noun + なくして（は）
+
+何しろ + sentence
+
+Noun + なしに(は)/なしでは
+
+Noun + ならでは
+
+Noun + ならいざ知らず/はいざ知らず
+
+Verb-dictionary form + なり
+
+Verb-dictionary form + に値する
+Noun + に値する
+
+Verb-dictionary form + に(は)あたらない
+
+Noun + にあって
+
+Verb-dictionary form + のにひきかえ/のにひきかえて
+Noun + （である）にひきかえ/のにひきかえて
+なadj + な/である + のにひきかえ/のにひきかえて
+いadj + のにひきかえ/のにひきかえて
+
+Noun + に至るまで
+
+Noun + に至っては
+
+Noun + に言わせれば
+
+Noun + にかかっている
+Phrase + にかかっている
+
+Verb-dictionary form + にかたくない
+Noun + にかたくない
+
+Noun + にもまして
+
+Noun + に則って
+
+Noun + に先駆けて
+
+Noun + に即し / に即して / に即した
+
+Verb-dictionary form + にたえる/にたえない
+Noun + にたえる/にたえない
+
+Verb-dictionary form + に足る/に足りる
+するNoun + に足る/に足りる
+
+Verb-dictionary form + に足りない
+
+Noun + に照らして
+
+Verb-dictionary form + にとどまらず
+Noun + にとどまらず
+
+Verb-dictionary form + に(は)及ばない
+Noun + に(は)及ばない
+
+Noun + によらず
+
+Verb-ないform (－ない) + んばかり + に/の/だ
+
+Verb-ないform (－ない) + んがため（に）
+Verb-ないform (－ない) + んがための + Noun
+
+Noun + の至り
+
+Noun + の極み
+
+Noun + のみか + Noun
+
+Verb-casual + のなんの（って）
+Adj + のなんの（って）
+
+Noun + を踏まえ / を踏まえて
+
+Noun + を経て
+
+Noun + を兼ねて/も兼ねて
+
+Noun + を皮切りに（して）/を皮切りとして
+Verb-casual, past + の + を皮切りに（して）/を皮切りとして
+
+Noun + を機に
+
+Noun + を禁じ得ない
+
+Noun + をものともせず（に）
+
+Noun + を余儀なくされる
+
+いadj + 思いをする
+なadj + な思いをする
+
+Verb-casual + 折に（は）
+Noun + 折に（は）
+
+およそ + Verb-ないform
+およそ + Noun
+
+Sentence 1 + さもないと / さもなければ + Sentence 2
+
+さぞ（かし） + phrase
+
+Verb-dictionary form + 始末だ
+この/その/あの + 始末だ
+
+Verb-dictionary form + そばから
+Verb-casual, past + そばから
+
+さも + Noun
+さも + いadj(－い) + そうに/そうな
+さも + なadj + そうに/そうな
+
+それなりに + Verb
+それなりの + Noun
+
+Verb-ますstem + そうにもない
+
+Verb-casual, past + 拍子に
+
+Verb-casual, past + ためしがない
+
+Noun + たりとも
+
+Verb-casual, past + 瞬間(に)
+Noun + の瞬間(に)
+
+てっきり + Verb
+
+Verb-てform + も差し支えない
+Noun + でも差し支えない
+いadj（－い） + くても差し支えない
+なadj + でも差し支えない
+
+Phrase + ってば/ったら
+Noun/なadj + だってば
+
+Verb-てform + やまない
+
+Noun + と（が）相まって
+
+Noun + というか
+というか + sentence
+
+Sentence + というわけだ
+
+Noun + といわず + Noun + といわず
+
+Verb-dictionary form + と見られる
+Noun + と見られる
+いadj + と見られる
+なadj + と見られる
+
+Verb-dictionary form + ともなく/ともなしに
+
+ともすれば + Noun/Adj
+
+Sentence 1 + と思いきや + Sentence 2
+
+Noun + はさておき
+
+Verb-dictionary form + や/や否や
+
+Noun + はおろか
+
+Verb-casual + （が）ゆえ（に）/（が）ゆえの
+Noun + （である） + （が）ゆえ（に）/（が）ゆえの
+なadj + （である） + （が）ゆえ（に）/（が）ゆえの
+いadj + （が）ゆえ（に）/（が）ゆえの
+
+Verb-ないform (－ない) + ざる
+
+Verb-ないform (－ない) + ずじまい
+
+Noun + ずくめ
+
+Verb-ないform (－ない) + ずとも
