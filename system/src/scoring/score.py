@@ -62,4 +62,4 @@ def score_file(filename):
 
 
 score_file('./../baselines/baseline_outputs.txt/average_sentence_length_baseline_output.txt')
-
+score_file('./../baselines/baseline_outputs.txt/average_word_JLPT_baseline.txt')
