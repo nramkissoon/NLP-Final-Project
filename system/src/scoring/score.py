@@ -9,6 +9,18 @@ def calculate_accuracy(output: list, answer_key: list):
             correct+=1
     return correct / total
 
+def calculate_level_accuracy(output: list, answer_key: list, level: int):
+    correct = 0
+    total = 0
+    assert(len(output) == len(answer_key))
+    for i in range(len(output)):
+        if output[i] == answer_key[i] and answer_key[i] == level:
+            correct+=1
+            total += 1
+        elif answer_key[i] == level:
+            total += 1
+    return correct / total
+
 def convert_output_to_int(output: list):
     converted_output = []
     for i in output:
@@ -42,9 +54,12 @@ def get_answers_from_test_corpus():
     return output
 
 def score_file(filename):
-    return calculate_accuracy(convert_output_to_int(
-        get_output_from_file(filename)),
-        get_answers_from_test_corpus())
+    file_output = convert_output_to_int(get_output_from_file(filename))
+    answers = get_answers_from_test_corpus()
+    print(filename, 'overall accuracy: ', calculate_accuracy(file_output, answers))
+    for i in range(1, 6):
+        print(filename, 'N'+str(i)+' accuracy: ', calculate_level_accuracy(file_output, answers, i))
 
-print("Average Sentence Length Baseline Accuracy: ", score_file('./../baselines/baseline_outputs.txt/average_sentence_length_baseline_output.txt'))
+
+score_file('./../baselines/baseline_outputs.txt/average_sentence_length_baseline_output.txt')
 

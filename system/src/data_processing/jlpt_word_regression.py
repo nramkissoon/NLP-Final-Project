@@ -104,6 +104,8 @@ def get_hardest_kanji_level(word):
             if is_kanji(character):
                 if character in kanji_to_level_map:
                     level = min(level, kanji_to_level_map[character])
+                else:
+                    level = 0
         return level
 
 def get_easiest_kanji_level(word):
@@ -147,6 +149,7 @@ model = linear_model.LinearRegression(fit_intercept=False) # if all our features
 model.fit([training_data[i][1::] for i in range(len(training_data))], [training_data[i][0] for i in range(len(training_data))])
 
 print('Writing model coefficients to system_ready_data/word_regression.txt...')
+print(model.coef_)
 
 with open('./../../system_ready_data/word_regression.txt', 'w') as file:
     coefs = model.coef_

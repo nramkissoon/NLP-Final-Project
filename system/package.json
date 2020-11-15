@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^14.14.7",
     "mecab-async": "^0.1.2"
   },
   "devDependencies": {
