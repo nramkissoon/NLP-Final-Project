@@ -1,0 +1,446 @@
+[
+  {
+    "id": "amari nai",
+    "parseStrategies": [["original"]],
+    "regex": ["あまり"]
+  },
+  {
+    "id": "atode",
+    "parseStrategies": [["original"]],
+    "regex": ["(あと(で)?|後(で)?)"]
+  },
+  {
+    "id": "ba",
+    "parseStrategies": [["P"]],
+    "regex": ["ばP"]
+  },
+  {
+    "id": "baai",
+    "parseStrategies": [["none"]],
+    "regex": ["場合"]
+  },
+  {
+    "id": "bakari",
+    "parseStrategies": [["P"]],
+    "regex": ["ばかりP"]
+  },
+  {
+    "id": "dake de",
+    "parseStrategies": [["P"]],
+    "regex": ["だけPでP"]
+  },
+  {
+    "id": "noun demo",
+    "parseStrategies": [["N", "P"]],
+    "regex": ["NでもP"]
+  },
+  {
+    "id": "garu",
+    "parseStrategies": [["V-dict-replace", "NADJ", "ADJ-stem"]],
+    "regex": ["(NADJ|ADJ-stem)がるV-DICT-FORM"]
+  },
+  {
+    "id": "ga suru",
+    "parseStrategies": [["N", "P", "V-dict-replace"]],
+    "regex": ["NがPするV-DICT-FORM"]
+  },
+  {
+    "id": "goro koro",
+    "parseStrategies": [["N"]],
+    "regex": ["(ごろ|ころ)N"]
+  },
+  {
+    "id": "hajime",
+    "parseStrategies": [["V-stem"]],
+    "regex": ["V-stem(はじめ|始め)"]
+  },
+  {
+    "id": "hazu",
+    "parseStrategies": [["N"]],
+    "regex": ["はずN"]
+  },
+  {
+    "id": "hitsuyou",
+    "parseStrategies": [["N", "P"]],
+    "regex": ["NがP(ひつよう|必要)"]
+  },
+  {
+    "id": "hitsuyou ga aru",
+    "parseStrategies": [["N", "P", "V-dict"]],
+    "regex": ["V-DICT-FORM(ひつよう|必要)がP"]
+  },
+  {
+    "id": "ga hoshii",
+    "parseStrategies": [["N", "P", "ADJ-dict-replace"]],
+    "regex": ["NがP(.*)?(欲しい|ほしい)ADJ-DICT-FORM"]
+  },
+  {
+    "id": "janaika",
+    "parseStrategies": [["none"]],
+    "regex": ["じゃん|じゃない|じゃないか|ではないか"]
+  },
+  {
+    "id": "kadouka",
+    "parseStrategies": [["P", "ADV"]],
+    "regex": ["かPどうADVかP"]
+  },
+  {
+    "id": "kai",
+    "parseStrategies": [["P"]],
+    "regex": ["かいP"]
+  },
+  {
+    "id": "kamoshirenai",
+    "parseStrategies": [["none"]],
+    "regex": ["かもしれない|かもしれません"]
+  },
+  {
+    "id": "kana",
+    "parseStrategies": [["P"]],
+    "regex": ["かPなP"]
+  },
+  {
+    "id": "kata",
+    "parseStrategies": [["N"]],
+    "regex": ["方N"]
+  },
+  {
+    "id": "kashira",
+    "parseStrategies": [["P"]],
+    "regex": ["かしらP"]
+  },
+  {
+    "id": "verb koto",
+    "parseStrategies": [["V-casual", "N"]],
+    "regex": ["V-casualことN"]
+  },
+  {
+    "id": "verb kotoga dekiru",
+    "parseStrategies": [["V-dict", "N", "P", "V-dict-replace"]],
+    "regex": ["V-DICT-FORMことN(は|が)Pできる(V-DICT-FORM)"]
+  },
+  {
+    "id": "verb kotoni naru",
+    "parseStrategies": [["V-dict", "N", "P", "V-dict-replace"]],
+    "regex": ["V-DICT-FORMことN(に)Pなる(V-DICT-FORM)"]
+  },
+  {
+    "id": "verb kotoni suru",
+    "parseStrategies": [["V-casual", "N", "P", "V-dict-replace"]],
+    "regex": ["V-casualことN(に)Pする(V-DICT-FORM)"]
+  },
+  {
+    "id": "madeni",
+    "parseStrategies": [["P"]],
+    "regex": ["までPにP"]
+  },
+  {
+    "id": "mitai",
+    "parseStrategies": [["ADJ-N-dict-replace"]],
+    "regex": ["みたいADJ-N-DICT-FORM"]
+  },
+  {
+    "id": "mitaini",
+    "parseStrategies": [["ADJ-N-dict-replace", "P"]],
+    "regex": ["みたいADJ-N-DICT-FORMにP"]
+  },
+  {
+    "id": "nado",
+    "parseStrategies": [["P"]],
+    "regex": ["などP"]
+  },
+
+  {
+    "id": "nagara",
+    "parseStrategies": [["V-stem","P"]],
+    "regex": ["V-stemながらP"]
+  },
+
+  {
+    "id": "naide",
+    "parseStrategies": [["V-neg-stem","P"]],
+    "regex": ["V-negないでP"]
+  },
+  {
+    "id": "nakerebanaranai",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["な(ければ|きゃ)(なる|いける)V-DICT-FORM"]
+  },
+  {
+    "id": "nakutehanaranai",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["なくては(なる|いける)V-DICT-FORM"]
+  },
+  {
+    "id": "nakutemoii",
+    "parseStrategies": [["V-neg-stem","P", "ADJ-dict-replace"]],
+    "regex": ["V-negなくてP(もP)?(いい|よい)ADJ-DICT-FORM"]
+  },
+  {
+    "id": "nara",
+    "parseStrategies": [["AUX"]],
+    "regex": ["ならAUX"]
+  },
+
+  {
+    "id": "nasai",
+    "parseStrategies": [["V-stem"]],
+    "regex": ["V-stemなさい"]
+  },
+  {
+    "id": "nikui",
+    "parseStrategies": [["V-stem", "ADJ-dict-replace"]],
+    "regex": ["V-stemにくいADJ-DICT-FORM"]
+  },
+  {
+    "id": "no nakade",
+    "parseStrategies": [["N"]],
+    "regex": ["Nの中で"]
+  },
+
+  {
+    "id": "verb no ni",
+    "parseStrategies": [["V-dict", "N", "P"]],
+    "regex": ["V-DICT-FORMのNにP"]
+  },
+  {
+    "id": "although no ni",
+    "parseStrategies": [["P"]],
+    "regex": ["のにP"]
+  },
+  {
+    "id": "noun nouyouni/na",
+    "parseStrategies": [["N"]],
+    "regex": ["Nのよう(な|に)"]
+  },
+  {
+    "id": "noun okini",
+    "parseStrategies": [["N"]],
+    "regex": ["Nおきに"]
+  },
+  {
+    "id": "v stem owaru",
+    "parseStrategies": [["V-stem", "V-dict-replace"]],
+    "regex": ["V-stem(終|お)わ(るV-DICT-FORM|りV-stem)"]
+  },
+  {
+    "id": "rareru",
+    "parseStrategies": [["V-neg-stem", "V-dict-replace"]],
+    "regex": ["V-negられ(るV-DICT-FORM|V-stem)"]
+  },
+  {
+    "id": "saserareru",
+    "parseStrategies": [["V-neg-stem", "V-dict-replace"]],
+    "regex": ["V-negさせV-negられ(るV-DICT-FORM|V-stem)"]
+  },
+  {
+    "id": "shi",
+    "parseStrategies": [["P"]],
+    "regex": ["しP"]
+  },
+  {
+    "id": "shika",
+    "parseStrategies": [["P"]],
+    "regex": ["しかP"]
+  },
+  {
+    "id": "sonnani",
+    "parseStrategies": [["none"]],
+    "regex": ["そんなに"]
+  },
+  {
+    "id": "soredemo",
+    "parseStrategies": [["none"]],
+    "regex": ["それでも"]
+  },
+  {
+    "id": "souni",
+    "parseStrategies": [["V-stem", "ADJ-stem", "NADJ"]],
+    "regex": ["(V-stem|ADJ-stem|NADJ)そう(に|な)?"]
+  },
+  {
+    "id": "souda",
+    "parseStrategies": [["V-casual", "ADJ-casual", "NADJ", "N"]],
+    "regex": ["(Nだ|V-casual|ADJ-casual|NADJだ)そう"]
+  },
+  {
+    "id": "sugiru",
+    "parseStrategies": [["V-stem", "ADJ-stem", "NADJ"]],
+    "regex": ["(V-stem|ADJ-stem|NADJ)すぎ"]
+  },
+  {
+    "id": "ta bakari",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なかっ)?(た|だ))ばかり"]
+  },
+  {
+    "id": "ta garu",
+    "parseStrategies": [["V-stem", "V-dict-replace"]],
+    "regex": ["V-stemたが(りV-stem|るV-DICT-FORM)"]
+  },
+  {
+    "id": "tara",
+    "parseStrategies": [["AUX"]],
+    "regex": ["たらAUX"]
+  },
+  {
+    "id": "taradou",
+    "parseStrategies": [["AUX"]],
+    "regex": ["たらAUXどう"]
+  },
+  {
+    "id": "tari tari",
+    "parseStrategies": [["P"]],
+    "regex": ["たりP(.*)たり(.*たりP)*"]
+  },
+  {
+    "id": "ta tokoro",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なかっ)?(た|だ))ところ"]
+  },
+  {
+    "id": "te ageru",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なく)?て|で)(やる|あげる|さしあげる)V-DICT-FORM"]
+  },
+  {
+    "id": "te aru",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なく)?て|で)あるV-DICT-FORM"]
+  },
+  {
+    "id": "te hoshii",
+    "parseStrategies": [["V-dict-replace", "ADJ-dict-replace"]],
+    "regex": ["V-DICT-FORM((なく)?て|で)(ほしい|欲しい)ADJ-DICT-FORM"]
+  },
+  {
+    "id": "te iku",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なく)?て|で)(いく|行く)ADJ-DICT-FORM"]
+  },
+  {
+    "id": "te irutokoro",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なく)?て|で)いるV-DICT-FORMところ"]
+  },
+  {
+    "id": "itadakemasenka",
+    "parseStrategies": [["none"]],
+    "regex": ["くれませんか|もらえませんか|くださいませんか|いただけませんか"]
+  },
+  {
+    "id": "tekureru",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なく)?て|で)くれるV-DICT-FORM"]
+  },
+  {
+    "id": "tekuru",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なく)?て|で)(くる|来る)V-DICT-FORM"]
+  },
+  {
+    "id": "temiru",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なく)?て|で)みるV-DICT-FORM"]
+  },
+  {
+    "id": "temorau",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なく)?て|で)もらうV-DICT-FORM"]
+  },
+  {
+    "id": "teoku",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なく)?て|で)おくV-DICT-FORM"]
+  },
+  {
+    "id": "te shimau",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なく)?(てしまうV-DICT-FORM|ちゃう|じゃう)|(でしまうV-DICT-FORM|ちゃう|じゃう))"]
+  },
+  {
+    "id": "tesumimasen",
+    "parseStrategies": [["none"]],
+    "regex": ["(て|で)すみません"]
+  },
+  {
+    "id": "teyokatta",
+    "parseStrategies": [["none"]],
+    "regex": ["(て|で)よっかた"]
+  },
+  {
+    "id": "toiukoto",
+    "parseStrategies": [["none"]],
+    "regex": ["ということ"]
+  },
+  {
+    "id": "toka",
+    "parseStrategies": [["P"]],
+    "regex": ["とかP(.*)とか(.*とかP)*"]
+  },
+  {
+    "id": "toki",
+    "parseStrategies": [["N"]],
+    "regex": ["(とき|時)N"]
+  },
+  {
+    "id": "tokoro",
+    "parseStrategies": [["V-dict"]],
+    "regex": ["V-DICT-FORMところ"]
+  },
+  {
+    "id": "toomou",
+    "parseStrategies": [["P","V-dict-replace"]],
+    "regex": ["とP(思う|おもう)V-DICT-FORM"]
+  },
+  {
+    "id": "tsuzuku",
+    "parseStrategies": [["V-stem","V-dict-replace"]],
+    "regex": ["V-stem(つづけ|続け)"]
+  },
+  {
+    "id": "yasui",
+    "parseStrategies": [["V-stem", "ADJ-dict-replace"]],
+    "regex": ["V-stemやすいADJ-DICT-FORM"]
+  },
+  {
+    "id": "yori",
+    "parseStrategies": [["P"]],
+    "regex": ["よりP"]
+  },
+  {
+    "id": "yotei",
+    "parseStrategies": [["N", "V-dict"]],
+    "regex": ["(V-DICT-FORM|Nの)予定"]
+  },
+  {
+    "id": "you",
+    "parseStrategies": [["N"]],
+    "regex": ["ようN"]
+  },
+  {
+    "id": "youni/na",
+    "parseStrategies": [["V-casual"]],
+    "regex": ["V-casualよう(に/な)"]
+  },
+  {
+    "id": "youni naru",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["ようになるV-DICT-FORM"]
+  },
+  {
+    "id": "youni suru",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["ようにするV-DICT-FORM"]
+  },
+  {
+    "id": "you to omou",
+    "parseStrategies": [["V-vol-stem", "V-dict-replace"]],
+    "regex": ["V-vol-stemうと思うV-DICT-FORM"]
+  },
+  {
+    "id": "zenzen",
+    "parseStrategies": [["none"]],
+    "regex": ["全然"]
+  }
+]

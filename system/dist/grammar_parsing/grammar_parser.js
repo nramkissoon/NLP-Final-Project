@@ -16,7 +16,13 @@ exports.parseStrategies = {
     ADJTESTEM: 'ADJ-te-stem',
     VSTEM: 'V-stem',
     VDICT: 'V-dict',
-    AUXVERBORIGINALREPLACE: 'AUX-original-replace'
+    AUXVERBORIGINALREPLACE: 'AUX-original-replace',
+    ADJSTEM: 'ADJ-stem',
+    ADJ_DICT_REPLACE: 'ADJ-dict-replace',
+    ADJ_NOUN_DICT_REPLACE: 'ADJ-N-dict-replace',
+    AUX: 'AUX',
+    ADJ_CASUAL: 'ADJ-casual',
+    VOL_STEM: 'V-vol-stem'
 };
 exports.chainParsing = (strategies, sentence) => {
     if (strategies[0] === exports.parseStrategies.NONE && strategies.length === 1) {
@@ -71,6 +77,24 @@ exports.chainParsing = (strategies, sentence) => {
             }
             else if (strategy === exports.parseStrategies.AUXVERBORIGINALREPLACE) {
                 r = sentenceParse_1.auxVerbOriginalReplaceParseChainable(sentence, result, words);
+            }
+            else if (strategy === exports.parseStrategies.ADJSTEM) {
+                r = sentenceParse_1.adjStemParseChainable(sentence, result, words);
+            }
+            else if (strategy === exports.parseStrategies.ADJ_DICT_REPLACE) {
+                r = sentenceParse_1.adjDictReplaceParseChainable(sentence, result, words);
+            }
+            else if (strategy === exports.parseStrategies.ADJ_NOUN_DICT_REPLACE) {
+                r = sentenceParse_1.adjNounDictReplaceParseChainable(sentence, result, words);
+            }
+            else if (strategy === exports.parseStrategies.AUX) {
+                r = sentenceParse_1.auxParseChainable(sentence, result, words);
+            }
+            else if (strategy === exports.parseStrategies.ADJ_CASUAL) {
+                r = sentenceParse_1.adjCasualParseChainable(sentence, result, words);
+            }
+            else if (strategy === exports.parseStrategies.VOL_STEM) {
+                r = sentenceParse_1.verbVolStemParseChainable(sentence, result, words);
             }
             words = r[1];
             result = r[0];

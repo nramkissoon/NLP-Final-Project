@@ -32,6 +32,11 @@ let grammar5 = JSON.parse(fs_1.default.readFileSync(path_1.default.join(__dirnam
 grammar5.forEach((grammarObj) => {
     jlpt5grammar.push(new grammar_parser_1.GrammarParser(grammarObj.regex, grammarObj.id, 5, grammarObj.parseStrategies));
 });
+const jlpt4grammar = [];
+let grammar4 = JSON.parse(fs_1.default.readFileSync(path_1.default.join(__dirname + '/../system_ready_data/training_data/JLPT_grammar_lists/JLPT4.json')).toString());
+grammar4.forEach((grammarObj) => {
+    jlpt4grammar.push(new grammar_parser_1.GrammarParser(grammarObj.regex, grammarObj.id, 4, grammarObj.parseStrategies));
+});
 // Load in JLPT word list data
 exports.jlptWordLists = {
     lists: []
@@ -98,7 +103,7 @@ const trainCorpus = documentParsing_1.splitDocuments(exports.trainCorpusText);
 const run = () => __awaiter(void 0, void 0, void 0, function* () {
     const sentences = yield parsingTesting_1.parseTestSentences();
     sentences.forEach((sentence) => {
-        jlpt5grammar.forEach((parser) => {
+        jlpt4grammar.forEach((parser) => {
             console.log(parser.parse(sentence));
         });
         sentence.tokens.forEach((token) => {

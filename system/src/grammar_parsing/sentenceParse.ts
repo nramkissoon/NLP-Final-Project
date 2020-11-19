@@ -41,6 +41,38 @@ export const verbCasualParseChainable = (sentence: Sentence, result: string[], w
   return [result, wordsLeft];
 }
 
+export const adjCasualParseChainable = (sentence: Sentence, result: string[], wordsLeft: WordData[]) => {
+  let i = 0;
+  sentence.tokens.forEach((token: WordData) => {
+    if (wordsLeft[i] !== null) {
+      if ((token.lexical === Lexicals.I_ADJ || token.lexical === Lexicals.AUX_VERB) && token.inflection === Inflections.DICT) {
+        result[i] = token.kanji+'ADJ-casual'
+        wordsLeft[i] = null
+      } else {
+        result[i] = token.kanji
+      }
+    }
+    i += 1
+  })
+  return [result, wordsLeft];
+}
+
+export const verbVolStemParseChainable = (sentence: Sentence, result: string[], wordsLeft: WordData[]) => {
+  let i = 0;
+  sentence.tokens.forEach((token: WordData) => {
+    if (wordsLeft[i] !== null) {
+      if ((token.lexical === Lexicals.VERB) && token.inflection === Inflections.VOL_STEM) {
+        result[i] = token.kanji+'V-vol-stem'
+        wordsLeft[i] = null
+      } else {
+        result[i] = token.kanji
+      }
+    }
+    i += 1
+  })
+  return [result, wordsLeft];
+}
+
 export const nounParseChainable = (sentence: Sentence, result: string[], wordsLeft: WordData[]) => {
   let i = 0;
   sentence.tokens.forEach((token: WordData) => {
@@ -138,12 +170,60 @@ export const nadjParseChainable = (sentence: Sentence, result: string[], wordsLe
   return [result, wordsLeft];
 }
 
+export const auxParseChainable = (sentence: Sentence, result: string[], wordsLeft: WordData[]) => {
+  let i = 0;
+  sentence.tokens.forEach((token: WordData) => {
+    if (wordsLeft[i] !== null) {
+      if (token.lexical === Lexicals.AUX_VERB) {
+        result[i] = token.kanji+'AUX'
+        wordsLeft[i] = null
+      } else {
+        result[i] = token.kanji
+      }
+    }
+    i += 1
+  })
+  return [result, wordsLeft];
+}
+
 export const verbDictReplaceParseChainable = (sentence: Sentence, result: string[], wordsLeft: WordData[]) => {
   let i = 0;
   sentence.tokens.forEach((token: WordData) => {
     if (wordsLeft[i] !== null) {
       if ((token.lexical === Lexicals.VERB)) {
         result[i] = token.original+'V-DICT-FORM'
+        wordsLeft[i] = null
+      } else {
+        result[i] = token.kanji
+      }
+    }
+    i += 1
+  })
+  return [result, wordsLeft];
+}
+
+export const adjNounDictReplaceParseChainable = (sentence: Sentence, result: string[], wordsLeft: WordData[]) => {
+  let i = 0;
+  sentence.tokens.forEach((token: WordData) => {
+    if (wordsLeft[i] !== null) {
+      if ((token.lexical === Lexicals.NOUN) && token.compound2 === Compounds.ADJ_NOUN) {
+        result[i] = token.original+'ADJ-N-DICT-FORM'
+        wordsLeft[i] = null
+      } else {
+        result[i] = token.kanji
+      }
+    }
+    i += 1
+  })
+  return [result, wordsLeft];
+}
+
+export const adjDictReplaceParseChainable = (sentence: Sentence, result: string[], wordsLeft: WordData[]) => {
+  let i = 0;
+  sentence.tokens.forEach((token: WordData) => {
+    if (wordsLeft[i] !== null) {
+      if ((token.lexical === Lexicals.I_ADJ)) {
+        result[i] = token.original+'ADJ-DICT-FORM'
         wordsLeft[i] = null
       } else {
         result[i] = token.kanji
@@ -192,6 +272,22 @@ export const auxVerbOriginalReplaceParseChainable = (sentence: Sentence, result:
     if (wordsLeft[i] !== null) {
       if (token.lexical === Lexicals.AUX_VERB) {
         result[i] = token.original+'AUX-original'
+        wordsLeft[i] = null
+      } else {
+        result[i] = token.kanji
+      }
+    }
+    i += 1
+  })
+  return [result, wordsLeft];
+}
+
+export const adjStemParseChainable = (sentence: Sentence, result: string[], wordsLeft: WordData[]) => {
+  let i = 0;
+  sentence.tokens.forEach((token: WordData) => {
+    if (wordsLeft[i] !== null) {
+      if (token.lexical === Lexicals.I_ADJ && (token.kanji === token.original.substring(0, token.original.length - 1))) {
+        result[i] = token.original+'ADJ-stem'
         wordsLeft[i] = null
       } else {
         result[i] = token.kanji

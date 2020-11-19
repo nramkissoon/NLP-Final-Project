@@ -22,7 +22,8 @@ export const Compounds = {
   CONNECTING_PARTICLE: '係助詞',
   PRONOUN: '代名詞',
   CONJUN_PARTICLE: '接続助詞',
-  GENERAL: '一般'
+  GENERAL: '一般',
+  ADJ_NOUN: '形容動詞語幹'
 }
 
 export const Inflections = {
@@ -31,7 +32,8 @@ export const Inflections = {
   NAI_STEM_V: '未然形',
   TE_STEM: '連用テ接続',
   TA_STEM: '連用タ接続',
-  HYPO_FORM: '仮定形'
+  HYPO_FORM: '仮定形',
+  VOL_STEM: '未然ウ接続'
 }
 
 export const isIndepNounAndNotNaAdj = (word: WordData) => {

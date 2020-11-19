@@ -10,7 +10,13 @@ import {
   verbStemParseChainable,
   verbCasualParseChainable,
   verbDictParseChainable,
-  auxVerbOriginalReplaceParseChainable
+  auxVerbOriginalReplaceParseChainable,
+  adjStemParseChainable,
+  adjDictReplaceParseChainable,
+  adjNounDictReplaceParseChainable,
+  auxParseChainable,
+  adjCasualParseChainable,
+  verbVolStemParseChainable
 } from './sentenceParse'
 
 export const parseStrategies = {
@@ -27,7 +33,13 @@ export const parseStrategies = {
   ADJTESTEM: 'ADJ-te-stem',
   VSTEM: 'V-stem',
   VDICT: 'V-dict',
-  AUXVERBORIGINALREPLACE: 'AUX-original-replace'
+  AUXVERBORIGINALREPLACE: 'AUX-original-replace',
+  ADJSTEM: 'ADJ-stem',
+  ADJ_DICT_REPLACE: 'ADJ-dict-replace',
+  ADJ_NOUN_DICT_REPLACE: 'ADJ-N-dict-replace',
+  AUX: 'AUX',
+  ADJ_CASUAL: 'ADJ-casual',
+  VOL_STEM: 'V-vol-stem'
 }
 
 export const chainParsing = (strategies: string[], sentence: Sentence) => {
@@ -69,6 +81,18 @@ export const chainParsing = (strategies: string[], sentence: Sentence) => {
         r = verbDictParseChainable(sentence, result, words);
       }else if (strategy === parseStrategies.AUXVERBORIGINALREPLACE) {
         r = auxVerbOriginalReplaceParseChainable(sentence, result, words);
+      }else if (strategy === parseStrategies.ADJSTEM) {
+        r = adjStemParseChainable(sentence, result, words);
+      }else if (strategy === parseStrategies.ADJ_DICT_REPLACE) {
+        r = adjDictReplaceParseChainable(sentence, result, words);
+      }else if (strategy === parseStrategies.ADJ_NOUN_DICT_REPLACE) {
+        r = adjNounDictReplaceParseChainable(sentence, result, words);
+      }else if (strategy === parseStrategies.AUX) {
+        r = auxParseChainable(sentence, result, words);
+      }else if (strategy === parseStrategies.ADJ_CASUAL) {
+        r = adjCasualParseChainable(sentence, result, words);
+      }else if (strategy === parseStrategies.VOL_STEM) {
+        r = verbVolStemParseChainable(sentence, result, words);
       }
       words = r[1];
       result = r[0];

@@ -22,7 +22,8 @@ exports.Compounds = {
     CONNECTING_PARTICLE: '係助詞',
     PRONOUN: '代名詞',
     CONJUN_PARTICLE: '接続助詞',
-    GENERAL: '一般'
+    GENERAL: '一般',
+    ADJ_NOUN: '形容動詞語幹'
 };
 exports.Inflections = {
     STEM: '連用形',
@@ -30,7 +31,8 @@ exports.Inflections = {
     NAI_STEM_V: '未然形',
     TE_STEM: '連用テ接続',
     TA_STEM: '連用タ接続',
-    HYPO_FORM: '仮定形'
+    HYPO_FORM: '仮定形',
+    VOL_STEM: '未然ウ接続'
 };
 exports.isIndepNounAndNotNaAdj = (word) => {
     return word.lexical === exports.Lexicals.NOUN && (word.compound !== exports.Compounds.NA_ADJ && word.compound !== exports.Compounds.NOT_INDEP);

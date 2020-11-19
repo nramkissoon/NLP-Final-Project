@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getParticles = exports.auxVerbOriginalReplaceParseChainable = exports.verbStemParseChainable = exports.verbDictParseChainable = exports.verbDictReplaceParseChainable = exports.nadjParseChainable = exports.adjTeStemParseChainable = exports.verbNegativeStemParseChainable = exports.particleParseChainable = exports.adverbParseChainable = exports.nounParseChainable = exports.verbCasualParseChainable = exports.vCasualParse = exports.originalParse = void 0;
+exports.getParticles = exports.adjStemParseChainable = exports.auxVerbOriginalReplaceParseChainable = exports.verbStemParseChainable = exports.verbDictParseChainable = exports.adjDictReplaceParseChainable = exports.adjNounDictReplaceParseChainable = exports.verbDictReplaceParseChainable = exports.auxParseChainable = exports.nadjParseChainable = exports.adjTeStemParseChainable = exports.verbNegativeStemParseChainable = exports.particleParseChainable = exports.adverbParseChainable = exports.nounParseChainable = exports.verbVolStemParseChainable = exports.adjCasualParseChainable = exports.verbCasualParseChainable = exports.vCasualParse = exports.originalParse = void 0;
 const mecabOutput_1 = require("./../mecab/mecabOutput");
 exports.originalParse = (sentence) => {
     let result = [];
@@ -32,6 +32,38 @@ exports.verbCasualParseChainable = (sentence, result, wordsLeft) => {
         if (wordsLeft[i] !== null) {
             if ((token.lexical === mecabOutput_1.Lexicals.VERB || token.lexical === mecabOutput_1.Lexicals.AUX_VERB) && token.inflection === mecabOutput_1.Inflections.DICT) {
                 result[i] = token.kanji + 'V-casual';
+                wordsLeft[i] = null;
+            }
+            else {
+                result[i] = token.kanji;
+            }
+        }
+        i += 1;
+    });
+    return [result, wordsLeft];
+};
+exports.adjCasualParseChainable = (sentence, result, wordsLeft) => {
+    let i = 0;
+    sentence.tokens.forEach((token) => {
+        if (wordsLeft[i] !== null) {
+            if ((token.lexical === mecabOutput_1.Lexicals.I_ADJ || token.lexical === mecabOutput_1.Lexicals.AUX_VERB) && token.inflection === mecabOutput_1.Inflections.DICT) {
+                result[i] = token.kanji + 'ADJ-casual';
+                wordsLeft[i] = null;
+            }
+            else {
+                result[i] = token.kanji;
+            }
+        }
+        i += 1;
+    });
+    return [result, wordsLeft];
+};
+exports.verbVolStemParseChainable = (sentence, result, wordsLeft) => {
+    let i = 0;
+    sentence.tokens.forEach((token) => {
+        if (wordsLeft[i] !== null) {
+            if ((token.lexical === mecabOutput_1.Lexicals.VERB) && token.inflection === mecabOutput_1.Inflections.VOL_STEM) {
+                result[i] = token.kanji + 'V-vol-stem';
                 wordsLeft[i] = null;
             }
             else {
@@ -138,12 +170,60 @@ exports.nadjParseChainable = (sentence, result, wordsLeft) => {
     });
     return [result, wordsLeft];
 };
+exports.auxParseChainable = (sentence, result, wordsLeft) => {
+    let i = 0;
+    sentence.tokens.forEach((token) => {
+        if (wordsLeft[i] !== null) {
+            if (token.lexical === mecabOutput_1.Lexicals.AUX_VERB) {
+                result[i] = token.kanji + 'AUX';
+                wordsLeft[i] = null;
+            }
+            else {
+                result[i] = token.kanji;
+            }
+        }
+        i += 1;
+    });
+    return [result, wordsLeft];
+};
 exports.verbDictReplaceParseChainable = (sentence, result, wordsLeft) => {
     let i = 0;
     sentence.tokens.forEach((token) => {
         if (wordsLeft[i] !== null) {
             if ((token.lexical === mecabOutput_1.Lexicals.VERB)) {
                 result[i] = token.original + 'V-DICT-FORM';
+                wordsLeft[i] = null;
+            }
+            else {
+                result[i] = token.kanji;
+            }
+        }
+        i += 1;
+    });
+    return [result, wordsLeft];
+};
+exports.adjNounDictReplaceParseChainable = (sentence, result, wordsLeft) => {
+    let i = 0;
+    sentence.tokens.forEach((token) => {
+        if (wordsLeft[i] !== null) {
+            if ((token.lexical === mecabOutput_1.Lexicals.NOUN) && token.compound2 === mecabOutput_1.Compounds.ADJ_NOUN) {
+                result[i] = token.original + 'ADJ-N-DICT-FORM';
+                wordsLeft[i] = null;
+            }
+            else {
+                result[i] = token.kanji;
+            }
+        }
+        i += 1;
+    });
+    return [result, wordsLeft];
+};
+exports.adjDictReplaceParseChainable = (sentence, result, wordsLeft) => {
+    let i = 0;
+    sentence.tokens.forEach((token) => {
+        if (wordsLeft[i] !== null) {
+            if ((token.lexical === mecabOutput_1.Lexicals.I_ADJ)) {
+                result[i] = token.original + 'ADJ-DICT-FORM';
                 wordsLeft[i] = null;
             }
             else {
@@ -192,6 +272,22 @@ exports.auxVerbOriginalReplaceParseChainable = (sentence, result, wordsLeft) => 
         if (wordsLeft[i] !== null) {
             if (token.lexical === mecabOutput_1.Lexicals.AUX_VERB) {
                 result[i] = token.original + 'AUX-original';
+                wordsLeft[i] = null;
+            }
+            else {
+                result[i] = token.kanji;
+            }
+        }
+        i += 1;
+    });
+    return [result, wordsLeft];
+};
+exports.adjStemParseChainable = (sentence, result, wordsLeft) => {
+    let i = 0;
+    sentence.tokens.forEach((token) => {
+        if (wordsLeft[i] !== null) {
+            if (token.lexical === mecabOutput_1.Lexicals.I_ADJ && (token.kanji === token.original.substring(0, token.original.length - 1))) {
+                result[i] = token.original + 'ADJ-stem';
                 wordsLeft[i] = null;
             }
             else {
