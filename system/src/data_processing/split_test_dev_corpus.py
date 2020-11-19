@@ -32,20 +32,38 @@ print("Splitting documents into development and test corpora...")
 
 open('./../../system_ready_data/development_corpus.txt', 'w').close()
 open('./../../system_ready_data/test_corpus.txt', 'w').close()
+open('./../../system_ready_data/training_corpus.txt', 'w').close()
+total_training = 0
+total_development = 0
+total_test = 0
 for i in range(5):
     jlpt_level_documents = documents[i]
-    to_dev_corpus = True
+    which_corpus = 0
     for document in jlpt_level_documents:
-        if to_dev_corpus:
+        if which_corpus < 7:
+            with open('./../../system_ready_data/training_corpus.txt', 'a') as file:
+                file.write(str(i+1) + '\n')
+                file.write(document)
+                file.write('\n\n')
+            total_training += 1
+        elif which_corpus < 8:
             with open('./../../system_ready_data/development_corpus.txt', 'a') as file:
                 file.write(str(i+1) + '\n')
                 file.write(document)
                 file.write('\n\n')
+            total_development += 1
         else:
             with open('./../../system_ready_data/test_corpus.txt', 'a') as file:
                 file.write(str(i+1) + '\n')
                 file.write(document)
                 file.write('\n\n')
-        to_dev_corpus = not to_dev_corpus
+            total_test += 1
+        which_corpus += 1
+        if (which_corpus == 10):
+            which_corpus = 0
         
-print("Documents split into development and test corpora.")        
+print("Documents split into training, development, and test corpora.")
+print("Total training documents: ", total_training)    
+print("Total developement documents: ", total_development)
+print("Total test documents: ", total_test)  
+print()  

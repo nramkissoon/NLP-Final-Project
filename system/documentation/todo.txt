@@ -12,3 +12,18 @@ test, dev corpus
 grammar list data
 script for grammar to regex
 script for kanji raw data DONE
+
+
+30 second
+- Document classification of Japanese text by reading difficulty for language learners
+- Classifying into difficulty levels specified by the Japanese Language Proficiency Test JLPT, standard test
+- I have a testing and development corpora which consist of documents with a labaled JLPT level, so reading exercises from prior JLPT exams and practice websites
+- based on research papers, 2 methods for classifying, word based and grammar construction based, my system is a combination of both
+- implemented and tested 3 simple baselines, average sentence length in document, average JLPT level of words in the document, JLPT level of the most difficult word in document
+- For the main system, I'm parsing documents for relevant words, and parsing sentences for specific grammatical contructions that 
+are characterisitic of a specific difficulty level and then im using TFIDF to classify the documents
+- evaluation metric is accuracy, how many classifications are correct / total. also accuracy per difficulty level.
+
+up to https://www3.nhk.or.jp/news/easy/k10012683831000/k10012683831000.html
+- n3 gr exer 4
+- n5 gr exer 14

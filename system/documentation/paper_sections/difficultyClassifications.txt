@@ -1,0 +1,6 @@
+Because the system will be classifying text based on reading difficulty from the point of view of a non-native speaker,
+it will follow the standard of the Japanese Language Proficiency Test (JLPT). The JLPT is widely considered to be the standard 
+of Japanese language proficiency examinations and is often used by Japanese companies for hiring foreigners and the Japanese government
+for immigration purposes. The JLPT has 5 different difficulty levels, N5 through N1, N5 being the easiest and N1 being the most advanced.
+For more context, attaining N5 can be approximated to one semester college course in beginner Japanese, and attaining N1 suggests the ability to
+consume and understand native-level materials. 

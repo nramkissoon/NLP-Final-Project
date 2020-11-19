@@ -1,0 +1,12 @@
+Because the task is simply a text classification problem with 5 classes, the evaluation metric for the proposed 
+system will be accuracy. Specifically, overall accuracy is calculated as the total number of correctly classified documents divided by the 
+total number of documents being tested. Another accuracy metric, adjacent-level accuracy, will be used as a metric with looser restrictions on what is 
+considered a correct classification. Adjacent-level accuracy will define a correct classification as one where the classification is
+within 1 level of the true classification (i.e. a classification of 2 or 4 will be considered correct if the true classification is 3). 
+Depending on the use case, classifying text into 5 distinct JLPT levels may be too granular, and a system that effectively predicts
+a ballpark figure of the difficulty level could suffice. 
+
+In Table ****DEFINE****, the overall and adjacent-level accuracies of each of the baselines and main system are provided.
+*** discuss results ***
+
+

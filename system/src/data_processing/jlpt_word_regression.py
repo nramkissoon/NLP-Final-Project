@@ -135,12 +135,12 @@ def get_unigram_freq(word):
 for word in official_word_list:
     features = [None] * 4
     features[0] = official_word_list[word]
-    #features[1] = get_num_kanji(word)
+    #features[4] = get_num_kanji(word)
     features[1] = get_unigram_freq(word)
-    #features[2] = calculate_avg_kanji_level(word)
+    #features[4] = calculate_avg_kanji_level(word)
     features[2] = calculate_mode_kanji_level(word)
     features[3] = get_hardest_kanji_level(word)
-    #features[5] = get_easiest_kanji_level(word)
+    #features[4] = get_easiest_kanji_level(word)
     training_data.append(features)
 
 print('Creating word JLPT level predictor linear regression model...')

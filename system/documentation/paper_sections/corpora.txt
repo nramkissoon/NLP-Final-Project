@@ -1,0 +1,11 @@
+In order to develop and test the system, a corpus consisting of a list of different Japanese text, each labeled with their
+respective JLPT levels, is required. I compiled a corpus of classified text from several sources. 
+- Official JLPT practice problem sets and reading material are available online. The JLPT website provides authoritative examples of Japanese text from 
+each difficulty level. 
+- NHK (Japan's national broadcaster) provides simplified versions of their news articles aimed
+at the N3 level on the website https://www3.nhk.or.jp/news/easy/. 
+- Genki II (Banno et al., 2011) is a standard textbook for the second semester of a beginner Japanese course. It contains 
+example sentences and reading exercises at the N4 level.
+- Unofficial JLPT practice resources and websites such as https://japanesetest4you.com/ provide labeled reading exercises and 
+example sentences.
+In total, ***number*** of labeled texts were compiled into the corpus which was then split into training, development, and test corpora.

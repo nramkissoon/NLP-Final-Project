@@ -2,6 +2,8 @@
  * classes and datatypes for easily handling mecab parser output
  */
 
+const stopCharacters = ['１','２','３','４','５','６','７','８','９','０', '＃','＄','「','」','（','）','＊','！','？','％', '、', '[', ']']
+
 export const Lexicals = {
   NOUN: '名詞',
   VERB: '動詞',
@@ -21,6 +23,15 @@ export const Compounds = {
   PRONOUN: '代名詞',
   CONJUN_PARTICLE: '接続助詞',
   GENERAL: '一般'
+}
+
+export const Inflections = {
+  STEM: '連用形',
+  DICT: '基本形',
+  NAI_STEM_V: '未然形',
+  TE_STEM: '連用テ接続',
+  TA_STEM: '連用タ接続',
+  HYPO_FORM: '仮定形'
 }
 
 export const isIndepNounAndNotNaAdj = (word: WordData) => {
@@ -101,11 +112,19 @@ export class Sentence {
   /**
    * return a list of words to be use in the word TFIDF component of the system
    */
+
+  // TODO number stemming
   getWordsForWordComplexityComponent = () => {
     const words: WordData[] = [];
     this.tokens.forEach((word: WordData) => {
-      if (isIndepNounAndNotNaAdj(word) || isIndepVerb(word) || isNaAdj(word) || isAdv(word) || isIndepIAdj(word)) {
-        words.push(word)
+      let stopWord = false;
+      stopCharacters.forEach((number: string) => {
+        if (word.kanji.indexOf(number) > -1) { stopWord = true; }
+      });
+      if (!stopWord) {
+        if (isIndepNounAndNotNaAdj(word) || isIndepVerb(word) || isNaAdj(word) || isAdv(word) || isIndepIAdj(word)) {
+          words.push(word)
+        }
       }
     });
 

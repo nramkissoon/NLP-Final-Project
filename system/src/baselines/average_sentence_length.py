@@ -13,7 +13,7 @@ def calculate_average_senetence_length(document: str):
 
 training_data = []
 
-with open('./../../system_ready_data/development_corpus.txt', 'r') as file:
+with open('./../../system_ready_data/training_corpus.txt', 'r') as file:
     lines = file.readlines()
     document_features = [None] * 2
     for line in lines:

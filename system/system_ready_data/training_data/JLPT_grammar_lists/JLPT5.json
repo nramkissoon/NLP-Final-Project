@@ -1,0 +1,197 @@
+[
+  {
+    "id": "desu",
+    "parseStrategies": [["original"]],
+    "regex": ["(です)"]
+  },
+
+  {
+    "id": "kedo",
+    "parseStrategies": [["none"]],
+    "regex": ["(けど|けれど|けれども)"]
+  },
+
+  {
+    "id": "mada",
+    "parseStrategies": [["none"]],
+    "regex": ["まだ"]
+  },
+
+  {
+    "id": "dake",
+    "parseStrategies": [["P-match"]],
+    "regex": ["だけ"]
+  },
+  {
+    "id": "darou",
+    "parseStrategies": [["none"]],
+    "regex": ["だろう"]
+  },
+  {
+    "id": "de",
+    "parseStrategies": [["P-match"]],
+    "regex": ["で"]
+  },
+  {
+    "id": "deshou",
+    "parseStrategies": [["none"]],
+    "regex": ["でしょう"]
+  },
+  {
+    "id": "ka",
+    "parseStrategies": [["P-match"]],
+    "regex": ["か^(ら)"]
+  },
+  {
+    "id": "kara",
+    "parseStrategies": [["P-match"]],
+    "regex": ["から"]
+  },
+
+  {
+    "id": "kurai",
+    "parseStrategies": [["N"]],
+    "regex": ["N(くらい|ぐらい)"]
+  },
+
+  {
+    "id": "maeni",
+    "parseStrategies": [["none"]],
+    "regex": ["(前に|の前に)"]
+  },
+
+  {
+    "id": "made",
+    "parseStrategies": [["P-match"]],
+    "regex": ["まで"]
+  },
+
+  {
+    "id": "mo",
+    "parseStrategies": [["P-match"]],
+    "regex": ["も"]
+  },
+
+  {
+    "id": "mou",
+    "parseStrategies": [["ADV"]],
+    "regex": ["もうADV"]
+  },
+
+  {
+    "id": "na",
+    "parseStrategies": [["P-match"]],
+    "regex": ["な"]
+  },
+
+  {
+    "id": "naidekudasai",
+    "parseStrategies": [["V-neg-stem"]],
+    "regex": ["V-neg(ないで|ないでください|ないで下さい)"]
+  },
+
+  {
+    "id": "naru",
+    "parseStrategies": [["N", "P", "NADJ", "ADJ-te-stem", "V-dict-replace"]],
+    "regex": ["(NにP|NADJにP|ADJ-TE-STEM)なるV-DICT-FORM"]
+  },
+
+  {
+    "id": "ni / e",
+    "parseStrategies": [["P-match"]],
+    "regex": ["(に|へ)"]
+  },
+
+  {
+    "id": "niiku",
+    "parseStrategies": [["V-stem", "P", "V-dict-replace"]],
+    "regex": ["V-stemにP(((いく|行く)V-DICT-FORM)|(いき|行き)V-stem)"]
+  },
+
+  {
+    "id": "NOUNnisuru",
+    "parseStrategies": [["N", "P", "V-dict-replace"]],
+    "regex": ["NにPするV-DICT-FORM"]
+  },
+
+  {
+    "id": "no possesive",
+    "parseStrategies": [["N", "P"]],
+    "regex": ["NのP"]
+  },
+
+  {
+    "id": "no nominalizer",
+    "parseStrategies": [["V-casual", "N"]],
+    "regex": ["V-casualのN"]
+  },
+
+  {
+    "id": "node",
+    "parseStrategies": [["P-match"]],
+    "regex": ["ので"]
+  },
+  {
+    "id": "jouze, suki, heta",
+    "parseStrategies": [["N", "V-dict"]],
+    "regex": ["(N|V-DICT-FORMのNが)(上手|じょうず|下手|へた|好き|すき)"]
+  },
+
+  {
+    "id": "tai",
+    "parseStrategies": [["V-stem", "AUX-original-replace"]],
+    "regex": ["V-stemたいAUX-original"]
+  },
+
+  {
+    "id": "kotogaaru",
+    "parseStrategies": [["AUX-original-replace", "P", "V-dict-replace"]],
+    "regex": ["(た|だ)AUX-originalこと(.)P(あるV-DICT-FORM|ない|なかった)"]
+  },
+
+  {
+    "id": "te iru",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM(て|で)いるV-DICT-FORM"]
+  },
+  {
+    "id": "te kudasai",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM(て|で)(くださる|下さる)"]
+  },
+  {
+    "id": "te mo ii",
+    "parseStrategies": [["V-dict-replace", "ADJ-te-stem"]],
+    "regex": ["((V-DICT-FORM((なく)?て|で))|N(で)|NADJで|ADJ-TE-STEMて)(も?)いい"]
+  },
+  {
+    "id": "te kara",
+    "parseStrategies": [["V-dict-replace", "P"]],
+    "regex": ["V-DICT-FORM((なく)?てP|でP)からP"]
+  },
+  {
+    "id": "te ha ikeru",
+    "parseStrategies": [["V-dict-replace", "P"]],
+    "regex": ["V-DICT-FORM(てP|でP)はPいけるV-DICT-FORM"]
+  },
+  {
+    "id": "noun to",
+    "parseStrategies": [["N", "P"]],
+    "regex": ["NとP"]
+  },
+  {
+    "id": "tsumori",
+    "parseStrategies": [["N"]],
+    "regex": ["つもりN"]
+  },
+  {
+    "id": "ya",
+    "parseStrategies": [["N", "P"]],
+    "regex": ["NやP"]
+  },
+  {
+    "id": "yori houga",
+    "parseStrategies": [["N", "P"]],
+    "regex": ["(よりP(.+)(のP)?ほうNがP)|((のP)?ほうNがP(.+)よりP)"]
+  }
+]

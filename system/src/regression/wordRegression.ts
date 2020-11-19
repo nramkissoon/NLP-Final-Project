@@ -1,6 +1,6 @@
 // Classes for predicting JLPT level of unlisted words
 
-import { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } from "constants";
+const stopCharacters = ['１', '２', '３', '４', '５', '６', '７', '８', '９', '０', '＃', '＄', '「', '」', '（', '）', '＊', '！', '？', '％']
 
 export interface JLPTKanjiLists {
   lists: Set<string>[]; 
@@ -106,7 +106,26 @@ export class JLPTWordRegression {
     return result;
   }
 
+  roundLevel = (level: number) => {
+    if (level < 1.5) {
+      return 1;
+    } else if (level < 2.5) {
+      return 2;
+    } else if (level < 3.5) {
+      return 3;
+    } else if (level < 4.5) {
+      return 4;
+    }
+    return 5;
+  }
+
   predictJLPT = (word: string) => {
-    return this.getModeKanjiLevel(word) * this.modeKanjiLevelCoef + this.getHardestKanji(word) * this.hardestKanjiLevelCoef + this.getUnigramFreq(word) * this.unigramFreqCoef;
+    let stopWord = false;
+    if (!wordContainsKanji(word)) { stopWord = true; }
+    stopCharacters.forEach((number: string) => {
+      if (word.indexOf(number) > -1) { stopWord = true; }
+    });
+    if (stopWord) { return 5; }
+    return this.roundLevel(this.getModeKanjiLevel(word) * this.modeKanjiLevelCoef + this.getHardestKanji(word) * this.hardestKanjiLevelCoef + this.getUnigramFreq(word) * this.unigramFreqCoef);
   }
 }

@@ -26,3 +26,20 @@ export const calculateCosineSimilarity = (A: Vector, B: Vector) => {
   const denominator = Math.sqrt(sumOfSquares(A) * sumOfSquares(B));
   return numerator / denominator;
 }
+
+export const calculateIDF = (totalDocuments: number, numDocsContainingElement: number) => {
+  return Math.log(totalDocuments / numDocsContainingElement);
+}
+
+// return number[][] of cosine similarities indexed at [doc][query]
+export const calculateCosSimilarityForEachDocForEachQuery = (docVectors: Vector[], queryVectors: Vector[]) => {
+  const result: number[][] = [];
+  docVectors.forEach((doc: Vector) => {
+    let docResults: number[] = [];
+    queryVectors.forEach((query: Vector) => {
+      docResults.push(calculateCosineSimilarity(doc, query));
+    });
+    result.push(docResults);
+  });
+  return result;
+}
