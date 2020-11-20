@@ -22,7 +22,11 @@ exports.parseStrategies = {
     ADJ_NOUN_DICT_REPLACE: 'ADJ-N-dict-replace',
     AUX: 'AUX',
     ADJ_CASUAL: 'ADJ-casual',
-    VOL_STEM: 'V-vol-stem'
+    VOL_STEM: 'V-vol-stem',
+    V_HYPO_STEM: 'V-hypo-stem',
+    ADJ_HYPO_STEM: 'ADJ-hypo-stem',
+    ADJ_DICT: 'ADJ-dict',
+    CON: 'CON'
 };
 exports.chainParsing = (strategies, sentence) => {
     if (strategies[0] === exports.parseStrategies.NONE && strategies.length === 1) {
@@ -95,6 +99,18 @@ exports.chainParsing = (strategies, sentence) => {
             }
             else if (strategy === exports.parseStrategies.VOL_STEM) {
                 r = sentenceParse_1.verbVolStemParseChainable(sentence, result, words);
+            }
+            else if (strategy === exports.parseStrategies.V_HYPO_STEM) {
+                r = sentenceParse_1.verbHypoStemParseChainable(sentence, result, words);
+            }
+            else if (strategy === exports.parseStrategies.ADJ_HYPO_STEM) {
+                r = sentenceParse_1.adjHypoStemParseChainable(sentence, result, words);
+            }
+            else if (strategy === exports.parseStrategies.ADJ_DICT) {
+                r = sentenceParse_1.adjDictParseChainable(sentence, result, words);
+            }
+            else if (strategy === exports.parseStrategies.CON) {
+                r = sentenceParse_1.conjunctionParseChainable(sentence, result, words);
             }
             words = r[1];
             result = r[0];

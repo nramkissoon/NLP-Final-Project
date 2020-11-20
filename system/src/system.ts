@@ -24,6 +24,11 @@ let grammar4: any[] = JSON.parse(fs.readFileSync(path.join(__dirname + '/../syst
 grammar4.forEach((grammarObj) => {
   jlpt4grammar.push(new GrammarParser(grammarObj.regex, grammarObj.id, 4, grammarObj.parseStrategies))
 })
+const jlpt3grammar: GrammarParser[] = [];
+let grammar3: any[] = JSON.parse(fs.readFileSync(path.join(__dirname + '/../system_ready_data/training_data/JLPT_grammar_lists/JLPT3.json')).toString());
+grammar3.forEach((grammarObj) => {
+  jlpt3grammar.push(new GrammarParser(grammarObj.regex, grammarObj.id, 3, grammarObj.parseStrategies))
+})
 
 
 // Load in JLPT word list data
@@ -105,7 +110,7 @@ const trainCorpus = splitDocuments(trainCorpusText)
 const run = async () => {
   const sentences: Sentence[] = await parseTestSentences();
   sentences.forEach((sentence) => {
-    jlpt4grammar.forEach((parser) => {
+    jlpt3grammar.forEach((parser) => {
       console.log(parser.parse(sentence))
     })
     sentence.tokens.forEach((token) => {

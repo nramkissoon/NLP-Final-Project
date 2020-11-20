@@ -1,328 +1,433 @@
-あえて + action
+あえて (aete): dare to
 
-あくまでも + Noun/Verb
+あくまでも (akumade mo): to the end, to the utmost degree
 
-案の定 + phrase
+案の定 (an no jou): just as one thought
 
-あらかじめ + Verb-casual, past
+あらかじめ (arakajime): beforehand, in advance
 
-Noun + あっての + Noun
+あっての (atte no): to owe everything to
 
-場合によっては + sentence
+場合によっては (baai ni yotte wa): depending on the situation
 
-Verb-ばconditional + こそ
-いadj (-い) + ければこそ
-Noun/なadj + であればこそ
+ばこそ (ba koso): only because
 
-Verb-ばconditional + それまでだ
+ばそれまでだ (ba sore made da): if… then it’s over
 
-Verb-dictionary form + べからず/べからざる
+べからず (bekarazu): must not, should not
 
-Noun/いadj（－い） + びる/びて
-Noun/いadj（－い） + びた + Noun
+べく (beku): in order to, should
 
-Verb-dictionary form + だに
-Noun + だに
+べくもない (beku mo nai): can’t
 
-Noun + であれ + Noun + であれ
-Noun + であろうと + Noun + であろうと
+びる (biru): seeming to be
 
-Noun/なadj + でも何でもない
+ぶり (buri): style, manner
 
-Noun + でなくてなんだろう
+ぶる (buru): behaving like
 
-Verb-casual + のではあるまいか
-Noun + ではあるまいか
-なadj + ではあるまいか
+だに (dani): even
 
-Verb + ではあるまいし/じゃあるまいし
-Noun + ではあるまいし/じゃあるまいし
+だの～だの (dano~dano): and, and so forth
 
-Noun + ではすまない/ではすまされない
-Verb-casual + ではすまない/ではすまされない
+であれ～であれ (de are~de are): whether A or B
 
-Verb-ますstem + がてら
-Noun + がてら
+であれ/であろうと (de are/de arou to): whoever/whatever/however
 
-Verb-dictionary form + が早いか
+でも何でもない (demo nan demo nai): not in the least
 
-Verb-casual, past + が最後/ら最後
+でなくてなんだろう (denakute nan darou): must be, is definitely
 
-Verb-casual + ごとく
-Noun + のごとく/ごとき
+ではあるまいか (dewa aru mai ka): I wonder if it’s not
 
-Noun + ぐるみ
+ではあるまいし (dewa aru mai shi): it’s not like, it isn’t as if
 
-Verb-dictionary form + 羽目になる
+ではすまない (dewa sumanai): it doesn’t end with just
 
-Verb-casual + ほうがましだ
+どうにも～ない (dou nimo~nai): not … by any means
 
-いかなる + Noun
+がてら (gatera): on the same occasion
 
-Noun + いかんだ/いかんで（は）/いかんによって（は）
+が早いか (ga hayai ka): as soon as
 
-Noun + （の）いかんにかかわらず/（の）いかんによらず
+が最後 (ga saigo): once something occurs, something else happens
 
-いかに + Noun
-いかに + Adj
-いかに + Verb
+ごとき/ごとく (gotoki/gotoku): like, as if
 
-いかにも + sentence
+ぐるみ (gurumi): together with
 
-いまだに + action
+羽目になる (hame ni naru): to end up with (something unpleasant)
 
-いずれにせよ/いずれにしろ/いずれにしても + sentence
+ひとつ (hitotsu): to give something a try
 
-Noun + じみた + Noun
+ほどのことはない (hodo no koto wa nai): not worth, no need to
 
-Verb-casual + か否か
-Noun + である + か否か
-いadj + か否か
-なadj + である + か否か
+ほかに～ない (hoka ni~nai): no other
 
-Verb-casual + 可能性がある
-Noun + の可能性がある
+ほうがましだ (hou ga mashi da): I would rather
 
-Noun + かたがた
+いかなる (ikanaru): any kind of
 
-Verb-dictionary form + かたわら
-Noun + のかたわら
+いかんでは/いかんによっては (ikan dewa/ikan ni yotte wa): depending on
 
-かつて + sentence
+いかんによらず (ikan ni yorazu): regardless of
 
-Verb-casual + 嫌いがある
-Noun + の嫌いがある
+いかに (ikani): how
 
-Noun + きっての + Noun
+いかにも (ikanimo): indeed, really
 
-Verb-ばconditional + きりがない
-Verb-dictionary form + ときりがない
-Verb-casual, past + らきりがない
+いまだに (ima da ni): still, even now
 
-なadj + 極まる/極まりない
+いずれにせよ (izure nise yo): at any rate, in any case
 
-極めて + Noun
-極めて + Adj
+じみた (jimita): to look like
 
-ことごとく + Verb
+限りだ (kagiri da): I feel so
 
-Verb-dictionary form + ことなしに（は）
+かいもなく (kai mo naku): even though
 
-Verb-casual, non-past + ことのないよう（に）
+か否か (ka ina ka): whether or not
 
-Verb-casual + こととて
-Noun + のこととて
-なadj + なこととて
+可能性がある (kanousei ga aru): there’s a possibility
 
-Verb-dictionary form + くらいなら/ぐらいなら
+からある (kara aru): as much as, as many as
 
-Noun + くらい/ぐらい + のものだ
+かれ～かれ (kare~kare): or
 
-Verb-dictionary form + までもない
+かたがた (katagata): while, for the purpose of
 
-Verb-dictionary form + まじき
+かたわら (katawara): while, at the same time
 
-Verb-casual, non-past + (が)まま(に)
+かつて (katsute): once, before
 
-Noun + まみれ
+嫌いがある (kirai ga aru): to have a tendency to
 
-まるっきり + Verb-casual
-まるっきり + Noun
+きっての (kitte no): the most … of all
 
-Noun + めいた/めいている
+きりがない (kiri ga nai): there’s no end to
 
-もはや + sentence
+極まる/極まりない (kiwamaru/kiwamarinai): extremely
 
-Noun + を顧みず/も顧みず
+極めて (kiwamete): extremely, exceedingly
 
-Sentence + ものと思われる
+ことだし (koto dashi): because, since
 
-Verb-casual + ものとして
+ことごとく (koto gotoku): altogether, entirely
 
-Noun + もしくは + Noun
-Verbal Noun + もしくは + Verb
+ことなしに (koto nashi ni): without doing something
 
-Verb-ないform + までも
+ことのないよう (koto no nai you): so as not to
 
-Verb-ないform + もの（だろう）か
+こととて (kototote): because, since
 
-Noun + なくして（は）
+くらいなら (kurai nara): rather than
 
-何しろ + sentence
+くらいのものだ (kurai no mono da): only
 
-Noun + なしに(は)/なしでは
+までだ (made da): only
 
-Noun + ならでは
+までもない (made mo nai): it’s not necessary to
 
-Noun + ならいざ知らず/はいざ知らず
+まじき (majiki): should not, must not
 
-Verb-dictionary form + なり
+ままに (mama ni): to do as
 
-Verb-dictionary form + に値する
-Noun + に値する
+まみれ (mamire): to be covered in
 
-Verb-dictionary form + に(は)あたらない
+まるっきり (marukkiri): totally, completely
 
-Noun + にあって
+めく (meku): to show signs of
 
-Verb-dictionary form + のにひきかえ/のにひきかえて
-Noun + （である）にひきかえ/のにひきかえて
-なadj + な/である + のにひきかえ/のにひきかえて
-いadj + のにひきかえ/のにひきかえて
+もはや (mohaya): already, no longer
 
-Noun + に至るまで
+も顧みず/を顧みず (mo kaerimizu/o kaerimizu): regardless of, despite
 
-Noun + に至っては
+もしないで (mo shinaide): without even doing
 
-Noun + に言わせれば
+もので (mono de): because, for that reason
 
-Noun + にかかっている
-Phrase + にかかっている
+ものを (mono o): I wish, if only
 
-Verb-dictionary form + にかたくない
-Noun + にかたくない
+ものと思われる (mono to omowareru): to think, to suppose
 
-Noun + にもまして
+ものとして (mono toshite): to assume, to suppose
 
-Noun + に則って
+もさることながら (mo saru koto nagara): not only… but also
 
-Noun + に先駆けて
+もしくは (moshikuwa): or, otherwise
 
-Noun + に即し / に即して / に即した
+ながらに/ながらの (nagara ni/nagara no): while, during
 
-Verb-dictionary form + にたえる/にたえない
-Noun + にたえる/にたえない
+ないではおかない/ずにはおかない (nai dewa okanai/zu niwa okanai): will definitely, cannot not
 
-Verb-dictionary form + に足る/に足りる
-するNoun + に足る/に足りる
+ないではすまない/ずにはすまない (nai dewa sumanai/zu niwa sumanai): must
 
-Verb-dictionary form + に足りない
+ないまでも (nai made mo): even if something isn’t done
 
-Noun + に照らして
+ないものか (nai mono ka): can’t we…?, can’t I…?
 
-Verb-dictionary form + にとどまらず
-Noun + にとどまらず
+ないものでもない (nai mono demo nai): (something) is not entirely impossible
 
-Verb-dictionary form + に(は)及ばない
-Noun + に(は)及ばない
+ないとも限らない (nai tomo kagiranai): might
 
-Noun + によらず
+なくして (nakushite): without
 
-Verb-ないform (－ない) + んばかり + に/の/だ
+何しろ (nani shiro): in any case, as you know
 
-Verb-ないform (－ない) + んがため（に）
-Verb-ないform (－ない) + んがための + Noun
+なしに (nashi ni): without
 
-Noun + の至り
+ならでは (nara dewa): uniquely applying to
 
-Noun + の極み
+ならいざしらず (nara iza shirazu): I don’t know about A, but B
 
-Noun + のみか + Noun
+なり (nari): as soon as
 
-Verb-casual + のなんの（って）
-Adj + のなんの（って）
+なり～なり (nari~nari): or
 
-Noun + を踏まえ / を踏まえて
+なりに/なりの (nari ni/nari no): in one’s own way or style
 
-Noun + を経て
+なりとも (naritomo): even a little, at least
 
-Noun + を兼ねて/も兼ねて
+に値する (ni atai suru): to be worth, to deserve
 
-Noun + を皮切りに（して）/を皮切りとして
-Verb-casual, past + の + を皮切りに（して）/を皮切りとして
+にあたらない (ni ataranai): it’s not worth, there’s no need to
 
-Noun + を機に
+にあって (ni atte): at, during, in the condition of
 
-Noun + を禁じ得ない
+にひきかえ (ni hikikae): in contrast to
 
-Noun + をものともせず（に）
+に至るまで (ni itaru made): until, as far as
 
-Noun + を余儀なくされる
+に至っては (ni itatte wa): as for, when it comes to
 
-いadj + 思いをする
-なadj + な思いをする
+に言わせれば (ni iwasereba): if you ask, if one may say
 
-Verb-casual + 折に（は）
-Noun + 折に（は）
+にかかっている (ni kakatte iru): to depend on
 
-およそ + Verb-ないform
-およそ + Noun
+にかたくない (ni katakunai): it’s not hard to
 
-Sentence 1 + さもないと / さもなければ + Sentence 2
+にまつわる (ni matsuwaru): to be related to
 
-さぞ（かし） + phrase
+にもほどがある (nimo hodo ga aru): to have a limit, to go too far
 
-Verb-dictionary form + 始末だ
-この/その/あの + 始末だ
+にもまして (ni momashite): more than, above
 
-Verb-dictionary form + そばから
-Verb-casual, past + そばから
+に則って (ni nottotte): in accordance with
 
-さも + Noun
-さも + いadj(－い) + そうに/そうな
-さも + なadj + そうに/そうな
+に先駆けて (ni saki gakete): to be the first
 
-それなりに + Verb
-それなりの + Noun
+にしたって (ni shitatte): even, even if
 
-Verb-ますstem + そうにもない
+にして (ni shite): only, in (time span)
 
-Verb-casual, past + 拍子に
+に即して (ni sokushite): in keeping with
 
-Verb-casual, past + ためしがない
+にたえる/にたえない (ni taeru/ni taenai): can/can’t do something
 
-Noun + たりとも
+に足る/に足りる (ni taru/ni tariru): to be enough, to be worthy of
 
-Verb-casual, past + 瞬間(に)
-Noun + の瞬間(に)
+に足りない (ni tarinai): to be not worth
 
-てっきり + Verb
+に照らして (ni terashite): in comparison with, according to
 
-Verb-てform + も差し支えない
-Noun + でも差し支えない
-いadj（－い） + くても差し支えない
-なadj + でも差し支えない
+にとどまらず (ni todomarazu): not limited to
 
-Phrase + ってば/ったら
-Noun/なadj + だってば
+には及ばない (niwa oyobanai): there’s no need to
 
-Verb-てform + やまない
+によらず (ni yorazu): regardless of
 
-Noun + と（が）相まって
+んばかりに (n bakari ni): as if, as though
 
-Noun + というか
-というか + sentence
+んがため (n ga tame): in order to
 
-Sentence + というわけだ
+の至り (no itari): utmost
 
-Noun + といわず + Noun + といわず
+の極み (no kiwami): utmost
 
-Verb-dictionary form + と見られる
-Noun + と見られる
-いadj + と見られる
-なadj + と見られる
+のみか (nomika): not only… but also
 
-Verb-dictionary form + ともなく/ともなしに
+のなんのって (no nan no tte): extremely
 
-ともすれば + Noun/Adj
+を踏まえて (o fumaete): based on
 
-Sentence 1 + と思いきや + Sentence 2
+を経て (o hete): through, after, via
 
-Noun + はさておき
+をいいことに (o ii koto ni): to take advantage of
 
-Verb-dictionary form + や/や否や
+を限りに (o kagiri ni): starting from
 
-Noun + はおろか
+を兼ねて (o kanete): also for the purpose of
 
-Verb-casual + （が）ゆえ（に）/（が）ゆえの
-Noun + （である） + （が）ゆえ（に）/（が）ゆえの
-なadj + （である） + （が）ゆえ（に）/（が）ゆえの
-いadj + （が）ゆえ（に）/（が）ゆえの
+を皮切りに (o kawakiri ni): starting with
 
-Verb-ないform (－ない) + ざる
+を機に (o ki ni): as an opportunity to
 
-Verb-ないform (－ない) + ずじまい
+を禁じえない (o kinjienai): can’t help but
 
-Noun + ずくめ
+をものともせず (o monotomo sezu): in defiance of
 
-Verb-ないform (－ない) + ずとも
+をもって (o motte) – 1: by means of
+
+をもって (o motte) – 2: at the time
+
+をおいて (o oite): other than, without
+
+を余儀なくされる (o yogi naku sareru): to be forced to do something
+
+をよそに (o yoso ni): despite
+
+思いをする (omoi o suru): to feel
+
+折に (ori ni): when, on the occasion
+
+およそ (oyoso): totally, (not) at all
+
+さもないと (samonaito): otherwise, else, if not so
+
+さぞ (sazo): I’m sure, I’m certain
+
+始末だ (shimatsu da): end up, in the end
+
+そばから (soba kara): as soon as
+
+さも (samo): truly, really
+
+それなりに (sore nari ni): as it is, in its own way
+
+そうにもない (sou nimo nai): impossible, unlikely
+
+ただ～のみだ (tada~nomi da): can do nothing but
+
+た拍子に (ta hyoushi ni): the instant
+
+ためしがない (tameshi ga nai): (something) is never the case
+
+たりとも (taritomo): (not) even, (not) any
+
+た瞬間に (ta shunkan ni): the moment
+
+てっきり (tekkiri): surely, certainly
+
+たところで (ta tokoro de): even if one does something
+
+てからというもの (te kara to iu mono): after, since
+
+てかなわない (te kanawanai): can’t stand, unable to
+
+てまで (te made): even
+
+てみせる (te miseru): I’ll definitely
+
+てもどうにもならない (temo dou nimo naranai): it’s no use
+
+ても始まらない (temo hajimaranai): it’s no use
+
+ても差し支えない (temo sashitsukaenai): can, it’s okay if
+
+てしかるべきだ (te shikaru beki da): should
+
+ってば (tteba): I said, I told you to
+
+てやまない (te yamanai): always, never stop
+
+と相まって (to aimatte): together with
+
+とあれば (to areba): if, if it’s the case that
+
+とあって (to atte): because of
+
+とばかりに (to bakari ni): as if, as though
+
+といえども (to ie domo): even, even if
+
+といい～といい (to ii~to ii): and, or
+
+といったらない (to ittara nai): very, extremely
+
+という (to iu): all, every
+
+というか (to iu ka): or, or more precisely
+
+というか～というか (to iu ka~to iu ka): (I’m not sure if it’s) A or B
+
+というところだ/といったところだ (to iu tokoro da/to itta tokoro da): approximately, about
+
+というもの (to iu mono): during a period of time
+
+というわけだ (to iu wake da): this means
+
+というわけではない (to iu wake dewa nai): it’s not that, it doesn’t mean that
+
+といわず (to iwazu): not just, both
+
+ときたら (tokitara): when it comes to, concerning
+
+ときている (to kite iru): because
+
+ところがある (tokoro ga aru): there is
+
+ところから (tokoro kara): from the fact that
+
+とみられる (to mirareru): to be regarded as, to be expected to
+
+とみるや (to miru ya): at the sight of, upon seeing
+
+ともなく (tomonaku): to do something without thinking about it
+
+ともなると/ともなれば (tomo naru to/tomo nareba): when, once (something happens)
+
+ともすれば (tomo sureba): apt to, prone to
+
+と思いきや (to omoikiya): I thought
+
+とりわけ (toriwake): especially
+
+とされる (to sareru): is considered
+
+とっさに (tossa ni): at once, right away
+
+としたって/としたところで (to shitatte/to shita tokoro de): even if
+
+として～ない (toshite~nai): not even one
+
+とて (tote): even if, even though
+
+とても～ない (totemo~nai): cannot possibly
+
+とは (towa): [indicates word or phrase being defined]
+
+とはいえ (towaie): nonetheless, although
+
+とはいうものの (towa iu mono no): having said that, be that as it may
+
+つ～つ (tsu~tsu): [indicates two contrasting actions]
+
+はおろか (wa oroka): let alone, not to mention
+
+はさておき (wa sateoki): setting aside
+
+や否や (ya ina ya): the moment that, as soon as
+
+やしない (yashinai): not (emphatic negative)
+
+(よ)うが/(よ)うと (you ga/you to): no matter how/what
+
+(よ)うが～まいが/(よ)うと～まいと (you ga~mai ga/you to~mai to): whether or not
+
+(よ)うか～まいか (you ka~mai ka): whether or not
+
+(よ)うものなら (you mono nara): if one chooses to
+
+(よ)うにも～ない (you nimo~nai): even if one tries to do something, it can’t be done
+
+ようによっては (you ni yotte wa): depending on
+
+ゆえに (yue ni): therefore, consequently
+
+ざる (zaru): not, -un
+
+ずじまい (zu jimai): never
+
+ずくめ (zukume): entirely, completely
+
+ずとも (zu tomo): even without doing

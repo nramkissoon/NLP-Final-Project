@@ -1,305 +1,239 @@
-Verb-ばconditional + (same) Verb + ほど
-いadj-ばconditional + (same) いadj + ほど
-なadj + なら + (same)なadj + なほど
+あまり (amari): so much… that
 
-Verb-ばconditional form + いい
+あまりに (amari ni): so much… that, too…
 
-erb-casual + ばかりか/ばかりでなく
-Noun + ばかりか/ばかりでなく
-いadj + ばかりか/ばかりでなく
-なadj + なばかりか/なばかりでなく
+ば～ほど (ba ~ hodo): the more… the more
 
-Verb-ば conditional + よかった（のに）
+ばいい (ba ii): should, can, it’d be good if
 
-Verb-dictionary form + べき/べきだ
+ばかりでなく (bakari denaku): not only… but also, as well as
 
-別に + Verb-ないform
-別に + Noun + ではない
-別に + いadj (remove い) + くない
-別に + なadj + ではない
+ばよかった (ba yokatta): should have, it would have been better if
 
-Noun + 中
+べき (beki): must do, should do
 
-Noun + だらけ
+べきではない (beki dewa nai): must not do, should not do
 
-Verb-casual, non-past + どころか
-いadjective + どころか
-なadjective + (な)どころか
-Noun + どころか
+べつに～ない (betsu ni ~ nai): not really, not particularly
 
-どんなに + Verb-てform + も
-どんな + Noun + でも
-どんなに + いadj + （－い）くても
-どんなに + なadj + でも
+中 (chuu/juu): during, throughout
 
-Verb-casual + ふりをする
-Noun + のふりをする
-いadj + ふりをする
-なadj + なふりをする
+だけ (dake) – 2: as much as
 
-ふと + action
+だらけ (darake): covered all over in, full of
 
-Verb-ますstem + がちだ
-Noun + がちだ
+どころか (dokoro ka): far from, anything but
 
-Verb-ます stem + がたい
+どんなに～ても (donna ni ~ temo): no matter how
 
-Verb-ますstem + 気味
-Noun + 気味
+ふりをする (furi o suru): to pretend, to act as if
 
-Verb-casual, non-past + ほど
-なadj + なほど/であるほど
-Noun + ほど
-いadj + ほど
+ふと (futo): accidentally, unexpectedly
 
-いくら + Verb-てform + も
-いくら + Noun + でも
-いくら + いadj (remove い) + くても
-いくら + なadj + でも
+がち (gachi): apt to do, tend to do
 
-一方
+がたい (gatai): hard to, difficult to
 
-Verb-ますstem + かける/かけの
+ぎみ (gimi): -like, -looking
 
-Verb-casual + 代わりに
-Noun + の代わりに
+ほど (hodo): the more, to the extent that, so much… that
 
-Verb-casual, past + っけ
-Noun + だっけ/だったっけ
-いadj + (-い) + かったっけ
-なadj + だっけ/だったっけ
+ほど～ない (hodo ~ nai): is not as… as
 
-決して+ Noun + ではない
-決して+ Verb-ないform
-決して+ いadj (-い) + くない
-決して+ なadj + ではない
+いくら～ても (ikura ~ temo): no matter how
 
-Verb-ますstem + 切る/切れる
+一方だ (ippou da): more and more, continue to
 
-Verb-ますstem + 切れない
+一方で (ippou de): on one hand, on the other hand
 
-Verb-casual + きり/っきり
-Noun + きり/っきり
+かけ (kake): half-, not yet finished
 
-Noun + こそ
+代わりに (kawari ni): instead of, in exchange for
 
-Verb-casual, non-past + ことがある
+っけ (kke): what is… again?
 
-Phrase + ことか
+決して～ない (kesshite ~ nai): never, by no means
 
-Verb-dictionary form + ことはない
+切る (kiru): to do something completely to the end
 
-Verb-casual + くらい/ぐらい
-いadjective + くらい/ぐらい
-なadjective + なくらい/ぐらい
-Noun + くらい/ぐらい
+切れない (kirenai): being too much to finish or complete
 
-Verb-Casual + くせに
-Noun + のくせに
-なadjective + なくせに
-いadjective + くせに
+きり (kiri): only, just
 
-Verb-casual, past + まま
-Verb-ないform + まま
-Noun + のまま
+こそ (koso): for sure (emphasize preceding word)
 
-まるで + Verb-casual + よう
-まるで + Noun + のよう
+こと (koto): (must) do
 
-めったに + Verb-ないform
+ことだ (koto da): should
 
-Verb-casual, past + ものだ/もんだ: used to do something
-Verb-casual, non-past + ものだ/もんだ: social norm/an obvious fact
-Adjective + ものだ/もんだ: exclamation
+ことがある (koto ga aru): there are times when
 
-もしかしたら/もしかすると + phrase + かもしれない
+ことか (koto ka): how…! what…!
 
-Noun + 向き
+ことに (koto ni): unusually, especially
 
-Noun + 向け
+ことはない (koto wa nai): there is no need to, never happens
 
-Verb-ますstem + ながら（も）
-Verb-てform + いながら（も）
-Noun + ながら（も）
-Adjective + ながら（も）
+くらい (kurai): to the extent that, so… that
 
-Verb-ないform + ことは(も)ない
-Noun + では/じゃ + ないことは(も)ない
-いadj + (-い) + くないことは(も)ない
-なadj + で/じゃ + ないことは(も)ない
+くせに (kuse ni): even though, and yet, despite
 
-Noun + なんて/なんか
-Sentence + なんて
+まま (mama): as it is
 
-なるべく + action
+まるで (maru de): as if, as though
 
-Result + なぜなら（ば）/なぜかというと + reason
+めったに～ない (metta ni ~ nai): hardly, rarely, seldom
 
-Verb-casual + に違いない
-Noun + に違いない
-なadj + に違いない
-いadj + に違いない
+もの (mono): because (indicate reason or excuse)
 
-Noun + にかけて（は）
+ものだ (mono da): used to do something, should do something
 
-Noun + に関する / に関して
+もしかしたら (moshikashitara): perhaps, maybe
 
-Noun + にかわって/にかわり
+向き (muki): suitable for
 
-Noun + に比べて/に比べると/に比べれば/に比べ
+向け(muke): intended for, aimed at
 
-Noun + において/における
+ながらも (nagara mo): but, although, despite
 
-Verb-casual + にしては
-Noun + にしては
+ないことはない (nai koto wa nai): can, is not impossible
 
-Verb-casual + にしても
-なadj + (である)にしても
-いadj + にしても
-Noun + (である)にしても
+なんか / なんて (nanka / nante): such as, things like
 
-Verb-casual + のに対して/のに対する
-Noun + に対して/に対する
-なadj + な/である + のに対して/に対する
-いadj + のに対して/に対する
+なるべく (narubeku): as much as possible
+なぜなら (nazenara): because, the reason is
 
-Noun + にとって
+に違いない (ni chigai nai): I’m sure, no doubt that
 
-Noun + について
+にかけて (ni kakete): over (a period), through, concerning
 
-Verb-dictionary form + につれ/につれて
-Noun + につれ/につれて
+に関する / に関して (ni kansu ru / ni kanshite): related to
 
-Noun + によると/によれば
+にかわって (ni kawatte): in stead of, on behalf of
 
-Noun + によって/により/による
+に比べて (ni kurabete): compared to
 
-Verb-casual, non-past + 間(に)
-Noun + の間(に)
-いadj + 間(に)
-なadj + な間(に)
+において/ における (ni oite / ni okeru): in, on, at, as for, regarding
+にしては (ni shite wa): for, considering it’s
 
-Noun + を中心に/を中心として/を中心とした/を中心とする
+にしても (ni shite mo): even if
 
-Verb-casual + おかげで
-いadjective + おかげで
-なadjective + なおかげで
-Noun + のおかげで
+に対して (ni taishite): in contrast to, while, in regard to
 
-おそらく + phrase
+にとって (ni totte): to, for, concerning
 
-Verb-stem + っぱなし
+について (ni tsuite): concerning, regarding
 
-Verb-stem + っぽい
-Noun + っぽい
-いadj (-い) + っぽい
-なadj + っぽい
+につれて (ni tsurete): as… then
 
-Noun + さえ/でさえ
+によると / によれば (ni yoru to / ni yoreba): according to
 
-Verb-てform + いる最中(に)
-Noun + の最中(に)
+によって / による (ni yotte / ni yoru): by means of, due to
 
-Verb-casual + せいで
-Noun + のせいで
+の間に (no aida ni): while, during
 
-Phrase 1 + その結果 + phrase 2
+を中心に (o chuushin ni): focused on, centered on
 
-Verb-ますstem + そうもない
+をはじめ (o hajime): for example, starting with
 
-Verb-dictionary form + たびに
-Noun + のたびに
+おかげで (okage de): thanks to, because of
 
-Verb-dictionary form + ため（に）
-Noun + のため（に）
+おそらく (osoraku): perhaps, likely, probably
 
-Verb-casual, past + らいい
-Verb-casual + といい
+っぱなし (ppanashi): leaving something on, leaving something still in use
 
-確かに + phrase
+っぽい (ppoi): -ish, -like
 
-たとえば + phrase
+さえ (sae): even
 
-Verb-casual, past + 結果
-Noun + の結果
+さえ～ば (sae ~ ba): if only… then
 
-Verb-casual, past + とたん（に）
+最中に (saichuu ni): in the middle of
 
-Verb-てform + もかまわない
-Noun + でもかまわない
-いadj (removeい) + くてもかまわない
-なadj + でもかまわない
+せいで (sei de): because of
 
-Verb-dictionary form + 途中で/途中に
-Noun + の途中で/の途中に
+しかない (shika nai): have no choice but
 
-Noun + （だ）といっても
-Verb-casual + といっても
-いadj + といっても
-なadj + （だ）といっても
+その結果 (sono kekka): as a result
 
-Verb-dictionary form + ということだ
-Phrase + ということだ
-Noun + ということだ
+そうもない (sou mo nai): very unlikely to
 
-というのは
+たびに (tabi ni): each time, everytime, whenever
 
-Noun + というと/といえば/といったら
+ために (tame ni) 1: for, for the sake of, in order to
 
-Verb-casual + というより(は)
-Noun + というより(は)
-いadj + というより(は)
-なadj + というより(は)
-Phrase + というより + Phrase
+ために (tame ni) 2: because of, as a result of
 
-ところで + new topic
+たらいい/といい (tara ii / to ii): it would be nice if, should, I hope
 
-Verb-dictionary form + とおり
-Verb-casual, past + とおり
-Noun + どおり/のとおり
+確かに (tashika ni): surely, certainly
 
-Noun + として
+たとえ～ても (tatoe ~ temo): even if… is the case
 
-Sentence + とは限らない
+たとえば (tatoeba): for example
 
-Verb-casual + ついでに
-するVerb (without する) + ついでに
-Noun + のついでに
-Sentence 1 + ついでに + sentence 2
+た結果 / の結果 (ta kekka/no kekka): as a result of
 
-Sentence 1 + つまり + Sentence 2
+たとたん (ta totan): just (now, at the moment), as soon as
 
-Verb-dictionary form + と共に
-Noun + と共に
+てごらん (te goran): (please) try to, (please) look
 
-Verb-casual + わけだ
-いadjective + わけだ
-なadjective + なわけだ
-Noun + である + わけだ
+てはじめて (te hajimete): not until, only after… did I
 
-Verb-casual + わけではない/わけじゃない
-いadjective + わけではない/わけじゃない
-なadjective + なわけではない/なわけじゃない
-Noun + (だ)というわけではない/(だ)というわけじゃない
+てもかまわない (temo kamawanai): it doesn’t matter if
 
-Verb-casual, non-past + わけがない
-Noun + であるわけがない
-なadj + なわけがない
-いadj + わけがない
+途中に/途中で (tochuu ni/tochuu de): on the way, in the middle of
 
-Verb-casual, non-past + わけにはいかない
-Verb-ないform + わけにはいかない
+といっても (to itte mo): although I say, although one might say
 
-Verb-casual + （ような）気がする
-Noun + （のような）気がする
-いadj + （ような）気がする
-なadj + （な）気がする
+という (to iu): called, named, as much as
 
-Verb-dictionary form + ように
-Verb-ないform + ように
+ということだ (to iu koto da): I’ve heard that, rumour has it that
 
-Verb-volitional + とする
+というのは (to iu nowa): means, is, because
 
-Verb-ないform (remove ない) + ず(に)
+というと (to iu to): speaking of, if it were the case that
 
-Verb-ないform (remove ない) + ずにはいられない
+というより (to iu yori): rather than
+
+ところで (tokoro de): by the way
+
+ところが (tokoro ga): even so, however, even though
+
+とおり (toori): in the way, the same as
+
+としたら / とすれば (to shitara / to sureba): if it were the case that, if we assume
+
+として (to shite): as (i.e. in the role of)
+
+とは限らない (towa kagiranai): not necessarily so, is not always true
+
+ついでに (tsuide ni): while you are at it, on the occasion
+
+つまり (tsumari): in other words; that is to say
+
+と共に (to tomo ni): together with
+
+うちに (uchi ni): while, before, doing
+
+わけだ (wake da): for that reason, no wonder, as you’d expect
+
+わけではない (wake dewa nai): it doesn’t mean that, it is not the case
+
+わけがない (wake ga nai): there is no way that
+
+わけにはいかない (wake niwa ikanai): must not, can’t afford to
+
+わりに (wari ni): although, rather, unexpectedly
+
+ような気がする (you na ki ga suru): have a feeling that, think that
+
+ように (you ni): in order to, so that
+
+ようとする (you to suru): try to, be about to
+
+ようとしない (you to shinai): not try to, not make an effort to
+
+ずに (zuni): without doing
+
+ずにはいられない (zu niwa irarenai): can’t help but feel, can’t help but do

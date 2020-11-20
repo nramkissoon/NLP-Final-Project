@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getParticles = exports.adjStemParseChainable = exports.auxVerbOriginalReplaceParseChainable = exports.verbStemParseChainable = exports.verbDictParseChainable = exports.adjDictReplaceParseChainable = exports.adjNounDictReplaceParseChainable = exports.verbDictReplaceParseChainable = exports.auxParseChainable = exports.nadjParseChainable = exports.adjTeStemParseChainable = exports.verbNegativeStemParseChainable = exports.particleParseChainable = exports.adverbParseChainable = exports.nounParseChainable = exports.verbVolStemParseChainable = exports.adjCasualParseChainable = exports.verbCasualParseChainable = exports.vCasualParse = exports.originalParse = void 0;
+exports.getParticles = exports.adjStemParseChainable = exports.auxVerbOriginalReplaceParseChainable = exports.verbStemParseChainable = exports.adjDictParseChainable = exports.conjunctionParseChainable = exports.verbDictParseChainable = exports.adjDictReplaceParseChainable = exports.adjNounDictReplaceParseChainable = exports.verbDictReplaceParseChainable = exports.auxParseChainable = exports.nadjParseChainable = exports.adjTeStemParseChainable = exports.verbNegativeStemParseChainable = exports.particleParseChainable = exports.adverbParseChainable = exports.nounParseChainable = exports.adjHypoStemParseChainable = exports.verbHypoStemParseChainable = exports.verbVolStemParseChainable = exports.adjCasualParseChainable = exports.verbCasualParseChainable = exports.vCasualParse = exports.originalParse = void 0;
 const mecabOutput_1 = require("./../mecab/mecabOutput");
 exports.originalParse = (sentence) => {
     let result = [];
@@ -64,6 +64,38 @@ exports.verbVolStemParseChainable = (sentence, result, wordsLeft) => {
         if (wordsLeft[i] !== null) {
             if ((token.lexical === mecabOutput_1.Lexicals.VERB) && token.inflection === mecabOutput_1.Inflections.VOL_STEM) {
                 result[i] = token.kanji + 'V-vol-stem';
+                wordsLeft[i] = null;
+            }
+            else {
+                result[i] = token.kanji;
+            }
+        }
+        i += 1;
+    });
+    return [result, wordsLeft];
+};
+exports.verbHypoStemParseChainable = (sentence, result, wordsLeft) => {
+    let i = 0;
+    sentence.tokens.forEach((token) => {
+        if (wordsLeft[i] !== null) {
+            if ((token.lexical === mecabOutput_1.Lexicals.VERB) && token.inflection === mecabOutput_1.Inflections.HYPO_FORM) {
+                result[i] = token.kanji + 'V-hypo-stem';
+                wordsLeft[i] = null;
+            }
+            else {
+                result[i] = token.kanji;
+            }
+        }
+        i += 1;
+    });
+    return [result, wordsLeft];
+};
+exports.adjHypoStemParseChainable = (sentence, result, wordsLeft) => {
+    let i = 0;
+    sentence.tokens.forEach((token) => {
+        if (wordsLeft[i] !== null) {
+            if ((token.lexical === mecabOutput_1.Lexicals.I_ADJ) && token.inflection === mecabOutput_1.Inflections.HYPO_FORM) {
+                result[i] = token.kanji + 'ADJ-hypo-stem';
                 wordsLeft[i] = null;
             }
             else {
@@ -238,8 +270,40 @@ exports.verbDictParseChainable = (sentence, result, wordsLeft) => {
     let i = 0;
     sentence.tokens.forEach((token) => {
         if (wordsLeft[i] !== null) {
-            if ((token.lexical === mecabOutput_1.Lexicals.VERB) && token.compound === mecabOutput_1.Compounds.INDEP && token.kanji === token.original) {
+            if ((token.lexical === mecabOutput_1.Lexicals.VERB) && token.kanji === token.original) {
                 result[i] = token.original + 'V-DICT-FORM';
+                wordsLeft[i] = null;
+            }
+            else {
+                result[i] = token.kanji;
+            }
+        }
+        i += 1;
+    });
+    return [result, wordsLeft];
+};
+exports.conjunctionParseChainable = (sentence, result, wordsLeft) => {
+    let i = 0;
+    sentence.tokens.forEach((token) => {
+        if (wordsLeft[i] !== null) {
+            if ((token.lexical === mecabOutput_1.Lexicals.CONJUNCTION)) {
+                result[i] = token.original + 'CON';
+                wordsLeft[i] = null;
+            }
+            else {
+                result[i] = token.kanji;
+            }
+        }
+        i += 1;
+    });
+    return [result, wordsLeft];
+};
+exports.adjDictParseChainable = (sentence, result, wordsLeft) => {
+    let i = 0;
+    sentence.tokens.forEach((token) => {
+        if (wordsLeft[i] !== null) {
+            if ((token.lexical === mecabOutput_1.Lexicals.I_ADJ) && token.kanji === token.original) {
+                result[i] = token.original + 'ADJ-DICT-FORM';
                 wordsLeft[i] = null;
             }
             else {

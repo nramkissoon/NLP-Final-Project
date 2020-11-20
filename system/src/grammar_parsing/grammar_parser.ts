@@ -16,7 +16,11 @@ import {
   adjNounDictReplaceParseChainable,
   auxParseChainable,
   adjCasualParseChainable,
-  verbVolStemParseChainable
+  verbVolStemParseChainable,
+  verbHypoStemParseChainable,
+  adjHypoStemParseChainable,
+  adjDictParseChainable,
+  conjunctionParseChainable
 } from './sentenceParse'
 
 export const parseStrategies = {
@@ -39,7 +43,11 @@ export const parseStrategies = {
   ADJ_NOUN_DICT_REPLACE: 'ADJ-N-dict-replace',
   AUX: 'AUX',
   ADJ_CASUAL: 'ADJ-casual',
-  VOL_STEM: 'V-vol-stem'
+  VOL_STEM: 'V-vol-stem',
+  V_HYPO_STEM: 'V-hypo-stem',
+  ADJ_HYPO_STEM: 'ADJ-hypo-stem',
+  ADJ_DICT: 'ADJ-dict',
+  CON: 'CON'
 }
 
 export const chainParsing = (strategies: string[], sentence: Sentence) => {
@@ -93,6 +101,14 @@ export const chainParsing = (strategies: string[], sentence: Sentence) => {
         r = adjCasualParseChainable(sentence, result, words);
       }else if (strategy === parseStrategies.VOL_STEM) {
         r = verbVolStemParseChainable(sentence, result, words);
+      }else if (strategy === parseStrategies.V_HYPO_STEM) {
+        r = verbHypoStemParseChainable(sentence, result, words);
+      }else if (strategy === parseStrategies.ADJ_HYPO_STEM) {
+        r = adjHypoStemParseChainable(sentence, result, words);
+      }else if (strategy === parseStrategies.ADJ_DICT) {
+        r = adjDictParseChainable(sentence, result, words);
+      }else if (strategy === parseStrategies.CON) {
+        r = conjunctionParseChainable(sentence, result, words);
       }
       words = r[1];
       result = r[0];

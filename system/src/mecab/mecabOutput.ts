@@ -11,7 +11,8 @@ export const Lexicals = {
   PARTICLE: '助詞',
   I_ADJ: '形容詞',
   AUX_VERB: '助動詞',
-  ADVERB: '副詞'
+  ADVERB: '副詞',
+  CONJUNCTION: '接続詞'
 }
 
 export const Compounds = {
