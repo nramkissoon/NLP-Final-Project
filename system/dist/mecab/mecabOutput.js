@@ -13,7 +13,8 @@ exports.Lexicals = {
     I_ADJ: '形容詞',
     AUX_VERB: '助動詞',
     ADVERB: '副詞',
-    CONJUNCTION: '接続詞'
+    CONJUNCTION: '接続詞',
+    PRE_NOUN_ADJ: '連体詞'
 };
 exports.Compounds = {
     NA_ADJ: '形容動詞語幹',

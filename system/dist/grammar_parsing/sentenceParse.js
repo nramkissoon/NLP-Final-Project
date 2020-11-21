@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getParticles = exports.adjStemParseChainable = exports.auxVerbOriginalReplaceParseChainable = exports.verbStemParseChainable = exports.adjDictParseChainable = exports.conjunctionParseChainable = exports.verbDictParseChainable = exports.adjDictReplaceParseChainable = exports.adjNounDictReplaceParseChainable = exports.verbDictReplaceParseChainable = exports.auxParseChainable = exports.nadjParseChainable = exports.adjTeStemParseChainable = exports.verbNegativeStemParseChainable = exports.particleParseChainable = exports.adverbParseChainable = exports.nounParseChainable = exports.adjHypoStemParseChainable = exports.verbHypoStemParseChainable = exports.verbVolStemParseChainable = exports.adjCasualParseChainable = exports.verbCasualParseChainable = exports.vCasualParse = exports.originalParse = void 0;
+exports.getParticles = exports.adjStemParseChainable = exports.auxVerbOriginalReplaceParseChainable = exports.verbStemParseChainable = exports.adjDictParseChainable = exports.preNounAdjParseChainable = exports.conjunctionParseChainable = exports.verbDictParseChainable = exports.adjDictReplaceParseChainable = exports.adjNounDictReplaceParseChainable = exports.verbDictReplaceParseChainable = exports.auxParseChainable = exports.nadjParseChainable = exports.adjTeStemParseChainable = exports.verbNegativeStemParseChainable = exports.particleParseChainable = exports.adverbParseChainable = exports.nounParseChainable = exports.adjHypoStemParseChainable = exports.verbHypoStemParseChainable = exports.verbVolStemParseChainable = exports.adjCasualParseChainable = exports.verbCasualParseChainable = exports.vCasualParse = exports.originalParse = void 0;
 const mecabOutput_1 = require("./../mecab/mecabOutput");
 exports.originalParse = (sentence) => {
     let result = [];
@@ -288,6 +288,22 @@ exports.conjunctionParseChainable = (sentence, result, wordsLeft) => {
         if (wordsLeft[i] !== null) {
             if ((token.lexical === mecabOutput_1.Lexicals.CONJUNCTION)) {
                 result[i] = token.original + 'CON';
+                wordsLeft[i] = null;
+            }
+            else {
+                result[i] = token.kanji;
+            }
+        }
+        i += 1;
+    });
+    return [result, wordsLeft];
+};
+exports.preNounAdjParseChainable = (sentence, result, wordsLeft) => {
+    let i = 0;
+    sentence.tokens.forEach((token) => {
+        if (wordsLeft[i] !== null) {
+            if ((token.lexical === mecabOutput_1.Lexicals.PRE_NOUN_ADJ)) {
+                result[i] = token.original + 'PRE-N-ADJ';
                 wordsLeft[i] = null;
             }
             else {

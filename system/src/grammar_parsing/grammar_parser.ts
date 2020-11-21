@@ -20,7 +20,8 @@ import {
   verbHypoStemParseChainable,
   adjHypoStemParseChainable,
   adjDictParseChainable,
-  conjunctionParseChainable
+  conjunctionParseChainable,
+  preNounAdjParseChainable
 } from './sentenceParse'
 
 export const parseStrategies = {
@@ -47,7 +48,8 @@ export const parseStrategies = {
   V_HYPO_STEM: 'V-hypo-stem',
   ADJ_HYPO_STEM: 'ADJ-hypo-stem',
   ADJ_DICT: 'ADJ-dict',
-  CON: 'CON'
+  CON: 'CON',
+  PRE_NOUN_ADJ: 'PRE-N-ADJ'
 }
 
 export const chainParsing = (strategies: string[], sentence: Sentence) => {
@@ -57,8 +59,6 @@ export const chainParsing = (strategies: string[], sentence: Sentence) => {
     return originalParse(sentence).join('')
   } else if (strategies[0] === parseStrategies.PMATCH && strategies.length === 1){
     return getParticles(sentence).join('')
-  } else if (strategies.length === 1 && strategies[0] === parseStrategies.VCASUAL) {
-    return vCasualParse(sentence).join('')
   } else {
     let words = Array.from(sentence.tokens);
     let result = new Array(words.length);
@@ -109,6 +109,8 @@ export const chainParsing = (strategies: string[], sentence: Sentence) => {
         r = adjDictParseChainable(sentence, result, words);
       }else if (strategy === parseStrategies.CON) {
         r = conjunctionParseChainable(sentence, result, words);
+      }else if (strategy === parseStrategies.PRE_NOUN_ADJ) {
+        r = preNounAdjParseChainable(sentence, result, words);
       }
       words = r[1];
       result = r[0];

@@ -1,8 +1,8 @@
 [
   {
     "id": "desu",
-    "parseStrategies": [["original"]],
-    "regex": ["(です)"]
+    "parseStrategies": [["none"]],
+    "regex": ["(です|だ。)"]
   },
 
   {

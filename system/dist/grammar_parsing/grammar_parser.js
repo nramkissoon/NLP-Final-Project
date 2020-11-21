@@ -26,7 +26,8 @@ exports.parseStrategies = {
     V_HYPO_STEM: 'V-hypo-stem',
     ADJ_HYPO_STEM: 'ADJ-hypo-stem',
     ADJ_DICT: 'ADJ-dict',
-    CON: 'CON'
+    CON: 'CON',
+    PRE_NOUN_ADJ: 'PRE-N-ADJ'
 };
 exports.chainParsing = (strategies, sentence) => {
     if (strategies[0] === exports.parseStrategies.NONE && strategies.length === 1) {
@@ -37,9 +38,6 @@ exports.chainParsing = (strategies, sentence) => {
     }
     else if (strategies[0] === exports.parseStrategies.PMATCH && strategies.length === 1) {
         return sentenceParse_1.getParticles(sentence).join('');
-    }
-    else if (strategies.length === 1 && strategies[0] === exports.parseStrategies.VCASUAL) {
-        return sentenceParse_1.vCasualParse(sentence).join('');
     }
     else {
         let words = Array.from(sentence.tokens);
@@ -111,6 +109,9 @@ exports.chainParsing = (strategies, sentence) => {
             }
             else if (strategy === exports.parseStrategies.CON) {
                 r = sentenceParse_1.conjunctionParseChainable(sentence, result, words);
+            }
+            else if (strategy === exports.parseStrategies.PRE_NOUN_ADJ) {
+                r = sentenceParse_1.preNounAdjParseChainable(sentence, result, words);
             }
             words = r[1];
             result = r[0];

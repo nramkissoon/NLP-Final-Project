@@ -298,6 +298,22 @@ export const conjunctionParseChainable = (sentence: Sentence, result: string[], 
   return [result, wordsLeft];
 }
 
+export const preNounAdjParseChainable = (sentence: Sentence, result: string[], wordsLeft: WordData[]) => {
+  let i = 0;
+  sentence.tokens.forEach((token: WordData) => {
+    if (wordsLeft[i] !== null) {
+      if ((token.lexical === Lexicals.PRE_NOUN_ADJ) ) {
+        result[i] = token.original+'PRE-N-ADJ'
+        wordsLeft[i] = null
+      } else {
+        result[i] = token.kanji
+      }
+    }
+    i += 1
+  })
+  return [result, wordsLeft];
+}
+
 export const adjDictParseChainable = (sentence: Sentence, result: string[], wordsLeft: WordData[]) => {
   let i = 0;
   sentence.tokens.forEach((token: WordData) => {
