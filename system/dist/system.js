@@ -47,6 +47,18 @@ let grammar2 = JSON.parse(fs_1.default.readFileSync(path_1.default.join(__dirnam
 grammar2.forEach((grammarObj) => {
     jlpt2grammar.push(new grammar_parser_1.GrammarParser(grammarObj.regex, grammarObj.id, 2, grammarObj.parseStrategies));
 });
+const jlpt1grammar = [];
+let grammar1 = JSON.parse(fs_1.default.readFileSync(path_1.default.join(__dirname + '/../system_ready_data/training_data/JLPT_grammar_lists/JLPT1.json')).toString());
+grammar1.forEach((grammarObj) => {
+    jlpt1grammar.push(new grammar_parser_1.GrammarParser(grammarObj.regex, grammarObj.id, 1, grammarObj.parseStrategies));
+});
+const jlptGrammarLists = {
+    1: jlpt1grammar,
+    2: jlpt2grammar,
+    3: jlpt3grammar,
+    4: jlpt4grammar,
+    5: jlpt5grammar,
+};
 // Load in JLPT word list data
 exports.jlptWordLists = {
     lists: []
@@ -113,7 +125,7 @@ const trainCorpus = documentParsing_1.splitDocuments(exports.trainCorpusText);
 const run = () => __awaiter(void 0, void 0, void 0, function* () {
     const sentences = yield parsingTesting_1.parseTestSentences();
     sentences.forEach((sentence) => {
-        jlpt2grammar.forEach((parser) => {
+        jlpt1grammar.forEach((parser) => {
             console.log(parser.parse(sentence));
         });
         sentence.tokens.forEach((token) => {
@@ -155,6 +167,16 @@ const run = () => __awaiter(void 0, void 0, void 0, function* () {
     fs_1.default.writeFileSync(path_1.default.join(__dirname + '/../system_ready_data/word_level_distribution_svm/dev_features.json'), devWordLevelDistributions);
     let testWordLevelDistributions = JSON.stringify(wordLevelDistribution_1.calculateWordLevelDsitributionForEachDocument(yield testCorpus, exports.jlptWordLists.lists[0], exports.jlptWordLists.lists[1], exports.jlptWordLists.lists[2], exports.jlptWordLists.lists[3], exports.jlptWordLists.lists[4], exports.jlptWordRegression));
     fs_1.default.writeFileSync(path_1.default.join(__dirname + '/../system_ready_data/word_level_distribution_svm/test_features.json'), testWordLevelDistributions);
+    //write grammar level feature data
+    // console.log("Parsing Training Corpus for grammar structures...")
+    // let trainGrammarLevelDistributions = JSON.stringify(calculateGrammarLevelDistributionFeaturesForEachDocument(await trainCorpus, jlptGrammarLists))
+    // fs.writeFileSync(path.join(__dirname + '/../system_ready_data/grammar_level_distribution_svm/train_features.json'), trainGrammarLevelDistributions);
+    // console.log("Parsing Dev Corpus for grammar structures...")
+    // let devGrammarLevelDistributions = JSON.stringify(calculateGrammarLevelDistributionFeaturesForEachDocument(await devCorpus, jlptGrammarLists))
+    // fs.writeFileSync(path.join(__dirname + '/../system_ready_data/grammar_level_distribution_svm/dev_features.json'), devGrammarLevelDistributions);
+    // console.log("Parsing Test Corpus for grammar structures...")
+    // let testGrammarLevelDistributions = JSON.stringify(calculateGrammarLevelDistributionFeaturesForEachDocument(await testCorpus, jlptGrammarLists))
+    // fs.writeFileSync(path.join(__dirname + '/../system_ready_data/grammar_level_distribution_svm/test_features.json'), testGrammarLevelDistributions);
 });
 run();
 //# sourceMappingURL=system.js.map

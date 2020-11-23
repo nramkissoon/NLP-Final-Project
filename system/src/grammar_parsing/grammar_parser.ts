@@ -1,7 +1,6 @@
 import { Sentence } from './../mecab/mecabOutput'
 import {
   originalParse,
-  vCasualParse,
   nounParseChainable, particleParseChainable, getParticles, adverbParseChainable,
   verbNegativeStemParseChainable,
   nadjParseChainable,

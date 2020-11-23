@@ -2,7 +2,7 @@
   {
     "id": "aruiwa",
     "parseStrategies": [["CON"]],
-    "regex": ["あるいは"]
+    "regex": ["あるいはCON"]
   },
   {
     "id": "bakarida",

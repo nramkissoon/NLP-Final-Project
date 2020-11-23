@@ -9,7 +9,8 @@ import { createJLPTWordQueryVectors, augmentJLPTWordQueryVectors } from './tfidf
 import { calculateCosSimilarityForEachDocForEachQuery } from './tfidf/tfidf'
 import { getMostCosineSimilar } from './baselines/output_writing/outputWriting'
 import { calculateWordLevelDsitributionForEachDocument } from './training/wordLevelDistribution'
-import { GrammarParser } from './grammar_parsing/grammar_parser'
+import { GrammarParser } from './grammar_parsing/grammar_parser';
+import { JLPTGrammarLists, calculateGrammarLevelDistributionFeaturesForEachDocument } from './training/grammarLevelDistribution';
 import fs from 'fs';
 import path from 'path';
 
@@ -34,6 +35,18 @@ let grammar2: any[] = JSON.parse(fs.readFileSync(path.join(__dirname + '/../syst
 grammar2.forEach((grammarObj) => {
   jlpt2grammar.push(new GrammarParser(grammarObj.regex, grammarObj.id, 2, grammarObj.parseStrategies))
 })
+const jlpt1grammar: GrammarParser[] = [];
+let grammar1: any[] = JSON.parse(fs.readFileSync(path.join(__dirname + '/../system_ready_data/training_data/JLPT_grammar_lists/JLPT1.json')).toString());
+grammar1.forEach((grammarObj) => {
+  jlpt1grammar.push(new GrammarParser(grammarObj.regex, grammarObj.id, 1, grammarObj.parseStrategies))
+})
+const jlptGrammarLists: JLPTGrammarLists = {
+  1: jlpt1grammar,
+  2: jlpt2grammar,
+  3: jlpt3grammar,
+  4: jlpt4grammar,
+  5: jlpt5grammar,
+}
 
 
 // Load in JLPT word list data
@@ -113,15 +126,15 @@ const trainCorpus = splitDocuments(trainCorpusText)
 
 // run the system
 const run = async () => {
-  const sentences: Sentence[] = await parseTestSentences();
-  sentences.forEach((sentence) => {
-    jlpt2grammar.forEach((parser) => {
-      console.log(parser.parse(sentence))
-    })
-    sentence.tokens.forEach((token) => {
-      console.log(token.kanji + ': ' + token.original + ': '+ token.lexical + ': '+ token.inflection + ': ' + token.compound + ': ' + token.compound2 + ': ' + token.compound3)
-    })
-  })
+  // const sentences: Sentence[] = await parseTestSentences();
+  // sentences.forEach((sentence) => {
+  //   jlpt1grammar.forEach((parser) => {
+  //     console.log(parser.parse(sentence))
+  //   })
+  //   sentence.tokens.forEach((token) => {
+  //     console.log(token.kanji + ': ' + token.original + ': '+ token.lexical + ': '+ token.inflection + ': ' + token.compound + ': ' + token.compound2 + ': ' + token.compound3)
+  //   })
+  // })
 
   console.log('Running Average Word JLPT BaseLine...')
   const AverageWordJLPTBaselineResults = runAverageWordJLPTBaseline(
@@ -200,7 +213,19 @@ const run = async () => {
     jlptWordRegression));
   fs.writeFileSync(path.join(__dirname + '/../system_ready_data/word_level_distribution_svm/test_features.json'), testWordLevelDistributions);
 
+  //write grammar level feature data
+  console.log("Parsing Training Corpus for grammar structures...")
+  let trainGrammarLevelDistributions = JSON.stringify(calculateGrammarLevelDistributionFeaturesForEachDocument(await trainCorpus, jlptGrammarLists))
+  fs.writeFileSync(path.join(__dirname + '/../system_ready_data/grammar_level_distribution_svm/train_features.json'), trainGrammarLevelDistributions);
   
+  console.log("Parsing Dev Corpus for grammar structures...")
+  let devGrammarLevelDistributions = JSON.stringify(calculateGrammarLevelDistributionFeaturesForEachDocument(await devCorpus, jlptGrammarLists))
+  fs.writeFileSync(path.join(__dirname + '/../system_ready_data/grammar_level_distribution_svm/dev_features.json'), devGrammarLevelDistributions);
+
+  console.log("Parsing Test Corpus for grammar structures...")
+  let testGrammarLevelDistributions = JSON.stringify(calculateGrammarLevelDistributionFeaturesForEachDocument(await testCorpus, jlptGrammarLists))
+  fs.writeFileSync(path.join(__dirname + '/../system_ready_data/grammar_level_distribution_svm/test_features.json'), testGrammarLevelDistributions);
+
 }
 
 run()

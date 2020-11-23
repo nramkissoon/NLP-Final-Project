@@ -1,5 +1,5 @@
 
-// module for calculating word level distributions in training corpus
+// module for calculating word level distributions
 import { Document } from '../document_parsing/documentParsing'
 import { WordData } from '../mecab/mecabOutput';
 import { JLPTWordRegression } from '../regression/wordRegression'

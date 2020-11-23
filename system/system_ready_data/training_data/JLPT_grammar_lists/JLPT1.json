@@ -1,0 +1,927 @@
+[
+  {
+    "id": "aete",
+    "parseStrategies": [["ADV"]],
+    "regex": ["あえてADV"]
+  },
+  {
+    "id": "akumademo",
+    "parseStrategies": [["ADV"]],
+    "regex": ["あくまでもADV"]
+  },
+  {
+    "id": "annojou",
+    "parseStrategies": [["none"]],
+    "regex": ["案の定"]
+  },
+  {
+    "id": "arakajime",
+    "parseStrategies": [["ADV"]],
+    "regex": ["あらかじめADV"]
+  },
+  {
+    "id": "atteno",
+    "parseStrategies": [["N"]],
+    "regex": ["Nあっての"]
+  },
+  {
+    "id": "baainoyotteha",
+    "parseStrategies": [["N", "P"]],
+    "regex": ["場合NによってPはP"]
+  },
+  {
+    "id": "bakoso",
+    "parseStrategies": [["P"]],
+    "regex": ["ばPこそP"]
+  },
+  {
+    "id": "ba soremade",
+    "parseStrategies": [["V-hypo-stem", "P", "N"]],
+    "regex": ["V-hypo-stemばPそれNまでP"]
+  },
+  {
+    "id": "bekarazu",
+    "parseStrategies": [["AUX"]],
+    "regex": ["べからAUXずAUX|べからAUXざるAUX"]
+  },
+  {
+    "id": "beku",
+    "parseStrategies": [["V-dict", "AUX"]],
+    "regex": ["V-DICT-FORMべくAUX"]
+  },
+  {
+    "id": "bekumonai",
+    "parseStrategies": [["V-dict", "AUX"]],
+    "regex": ["(V-DICT-FORM|す)べくAUXも(ない|なく|なかった)"]
+  },
+  {
+    "id": "biru",
+    "parseStrategies": [["N", "ADJ-stem"]],
+    "regex": ["(N|ADJ-stem)(びる|びて|びた)"]
+  },
+  {
+    "id": "buri",
+    "parseStrategies": [["N", "V-stem"]],
+    "regex": ["(N|V-stem)(ぶり|っぷり)"]
+  },
+  {
+    "id": "dani",
+    "parseStrategies": [["P"]],
+    "regex": ["だにP"]
+  },
+  {
+    "id": "dano",
+    "parseStrategies": [["P"]],
+    "regex": ["だのP"]
+  },
+  {
+    "id": "deare",
+    "parseStrategies": [["N"]],
+    "regex": ["Nであれ.*Nであれ|Nであろうと.*Nであろうと"]
+  },
+  {
+    "id": "deare",
+    "parseStrategies": [["N"]],
+    "regex": ["Nであれ|Nであろうと"]
+  },
+  {
+    "id": "demonandemonai",
+    "parseStrategies": [["none"]],
+    "regex": ["でも何でもない|でも何でもなくて|でも何でもなかった|でも何でもありません"]
+  },
+  {
+    "id": "denakutenandarou",
+    "parseStrategies": [["N"]],
+    "regex": ["Nでなくてなんだろう"]
+  },
+  {
+    "id": "dehaarumaika",
+    "parseStrategies": [["none"]],
+    "regex": ["ではあるまいか"]
+  },
+  {
+    "id": "dehaarumaishi",
+    "parseStrategies": [["none"]],
+    "regex": ["ではあるまいし|じゃあるまいし"]
+  },
+  {
+    "id": "dehasumanai",
+    "parseStrategies": [["none"]],
+    "regex": ["ではすまない|ではすまされない|ではすまなく|ではすまされなく|ではすまなかった|ではすまされなかった"]
+  },
+  {
+    "id": "dounimo",
+    "parseStrategies": [["ADV"]],
+    "regex": ["どうにもADV"]
+  },
+  {
+    "id": "gatera",
+    "parseStrategies": [["N", "V-stem"]],
+    "regex": ["(N|V-stem)がてら"]
+  },
+  {
+    "id": "gahayaika",
+    "parseStrategies": [["V-dict"]],
+    "regex": ["V-DICT-FORMが早いか"]
+  },
+  {
+    "id": "gasaigo",
+    "parseStrategies": [["V-dict"]],
+    "regex": ["V-DICT-FORMが早いか"]
+  },
+  {
+    "id": "ga saigo",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なかっ)?(た|だ))(が|ら)最後"]
+  },
+  {
+    "id": "go toki",
+    "parseStrategies": [["V-casual", "N"]],
+    "regex": ["V-casualごとく|N(のごとく|ごとき)"]
+  },
+  {
+    "id": "gurumi",
+    "parseStrategies": [["N"]],
+    "regex": ["Nぐるみ"]
+  },
+  {
+    "id": "hameninaru",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["羽目になるV-DICT-FORM"]
+  },
+  {
+    "id": "kodonokotohanai",
+    "parseStrategies": [["V-dict"]],
+    "regex": ["V-DICT-FORMほどのことは(ない|なく|なかった|ありません)"]
+  },
+  {
+    "id": "hougamashida",
+    "parseStrategies": [["V-casual"]],
+    "regex": ["V-casualほうがまし(だ|で|じゃ)"]
+  },
+  {
+    "id": "ikanaru",
+    "parseStrategies": [["PRE-N-ADJ"]],
+    "regex": ["いかなるPRE-N-ADJ"]
+  },
+  {
+    "id": "ikandeha",
+    "parseStrategies": [["N"]],
+    "regex": ["N(の)?(いかんNだ|いかんNで|いかんNによって)"]
+  },
+  {
+    "id": "ikannikakawarazu",
+    "parseStrategies": [["N"]],
+    "regex": ["N(の)(いかんNにかかわらず|いかんNによらず)"]
+  },
+  {
+    "id": "ikani",
+    "parseStrategies": [["ADV"]],
+    "regex": ["いかにADV"]
+  },
+  {
+    "id": "ikaninimo",
+    "parseStrategies": [["ADV"]],
+    "regex": ["いかにもADV"]
+  },
+  {
+    "id": "imadani",
+    "parseStrategies": [["ADV"]],
+    "regex": ["いまだにADV"]
+  },
+  {
+    "id": "izureneseyo",
+    "parseStrategies": [["none"]],
+    "regex": ["いずれにせよ|いずれにしろ|いずれにしても"]
+  },
+  {
+    "id": "jimita",
+    "parseStrategies": [["N"]],
+    "regex": ["Nじみた"]
+  },
+  {
+    "id": "kagari",
+    "parseStrategies": [["ADJ-dict", "NADJ"]],
+    "regex": ["(ADJ-DICT-FORM|NADJな)限り"]
+  },
+  {
+    "id": "kaimonaku",
+    "parseStrategies": [["none"]],
+    "regex": ["かいもなく"]
+  },
+  {
+    "id": "kainaka",
+    "parseStrategies": [["none"]],
+    "regex": ["か否か"]
+  },
+  {
+    "id": "kanousei",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["可能性があるV-DICT-FORM"]
+  },
+  {
+    "id": "katagata",
+    "parseStrategies": [["N"]],
+    "regex": ["Nかたがた"]
+  },
+  {
+    "id": "katawara",
+    "parseStrategies": [["N", "V-dict"]],
+    "regex": ["(Nの|V-DICT-FORM)かたわら"]
+  },
+  {
+    "id": "katsute",
+    "parseStrategies": [["ADV"]],
+    "regex": ["かつてADV"]
+  },
+  {
+    "id": "kiraiga",
+    "parseStrategies": [["V-casual", "N"]],
+    "regex": ["(V-casual|Nの)(嫌い|きらい)Nが"]
+  },
+  {
+    "id": "kitteno",
+    "parseStrategies": [["N"]],
+    "regex": ["Nきっての"]
+  },
+  {
+    "id": "kiriganai",
+    "parseStrategies": [["none"]],
+    "regex": ["きりが(ない|なく|ありません|なかった)"]
+  },
+  {
+    "id": "kiwamarinai",
+    "parseStrategies": [["NADJ"]],
+    "regex": ["NADJ(き|極)(まる|まりない)"]
+  },
+  {
+    "id": "kiwamete",
+    "parseStrategies": [["ADV"]],
+    "regex": ["(き|極)めてADV"]
+  },
+  {
+    "id": "kotodashi",
+    "parseStrategies": [["none"]],
+    "regex": ["ことだし"]
+  },
+  {
+    "id": "kotogotoku",
+    "parseStrategies": [["ADV"]],
+    "regex": ["ことごとくADV"]
+  },
+  {
+    "id": "kotonashino",
+    "parseStrategies": [["V-dict"]],
+    "regex": ["V-DICT-FORMことなしに"]
+  },
+  {
+    "id": "kotonaiyou",
+    "parseStrategies": [["none"]],
+    "regex": ["ことのないよう"]
+  },
+  {
+    "id": "kotote",
+    "parseStrategies": [["N", "P"]],
+    "regex": ["ことNとPてP"]
+  },
+  {
+    "id": "kurainara",
+    "parseStrategies": [["V-dict"]],
+    "regex": ["V-DICT-FORM(くらいなら|ぐらいなら)"]
+  },
+  {
+    "id": "kuraimonoda",
+    "parseStrategies": [["N"]],
+    "regex": ["N(くらい|ぐらい)(.*)?のものN(で|だ|じゃ)"]
+  },
+  {
+    "id": "madeda",
+    "parseStrategies": [["none"]],
+    "regex": ["まで(のこと)?(で|だ|じゃ)"]
+  },
+  {
+    "id": "mademonai",
+    "parseStrategies": [["V-dict"]],
+    "regex": ["V-DICT-FORMまでも(なく|ない|なかった|ありません)"]
+  },
+  {
+    "id": "majiki",
+    "parseStrategies": [["AUX"]],
+    "regex": ["まじきAUX"]
+  },
+  {
+    "id": "mamire",
+    "parseStrategies": [["none"]],
+    "regex": ["まみれ"]
+  },
+  {
+    "id": "marukkiri",
+    "parseStrategies": [["ADV"]],
+    "regex": ["まるっきりADV"]
+  },
+  {
+    "id": "meku",
+    "parseStrategies": [["N"]],
+    "regex": ["N(めいた|めいている)"]
+  },
+  {
+    "id": "mohaya",
+    "parseStrategies": [["ADV"]],
+    "regex": ["もはやADV"]
+  },
+  {
+    "id": "wo kaerimizu",
+    "parseStrategies": [["N"]],
+    "regex": ["N(を顧みず|も顧みず)"]
+  },
+  {
+    "id": "mo shinaide",
+    "parseStrategies": [["V-stem"]],
+    "regex": ["V-stemもしないで"]
+  },
+  {
+    "id": "monode",
+    "parseStrategies": [["V-casual", "N", "AUX"]],
+    "regex": ["V-casualものNでAUX"]
+  },
+  {
+    "id": "monoo",
+    "parseStrategies": [["V-casual", "ADJ-dict-replace"]],
+    "regex": ["(V-casual|ADJ-DICT-FORM)ものを"]
+  },
+  {
+    "id": "monotoomowareru",
+    "parseStrategies": [["none"]],
+    "regex": ["ものと思われ"]
+  },
+  {
+    "id": "monotoshite",
+    "parseStrategies": [["V-casual"]],
+    "regex": ["V-casualものとして"]
+  },
+  {
+    "id": "mosarukotonagara",
+    "parseStrategies": [["N"]],
+    "regex": ["Nもさることながら"]
+  },
+  {
+    "id": "moshikuha",
+    "parseStrategies": [["N"]],
+    "regex": ["Nもしくは"]
+  },
+  {
+    "id": "nagarani",
+    "parseStrategies": [["none"]],
+    "regex": ["ながらに|ながらの"]
+  },
+  {
+    "id": "dehaokanai",
+    "parseStrategies": [["none"]],
+    "regex": ["ではおかない|ずにはおかない"]
+  },
+  {
+    "id": "dehasumanai",
+    "parseStrategies": [["none"]],
+    "regex": ["ではすまない|ずにはすまない"]
+  },
+  {
+    "id": "naimademo",
+    "parseStrategies": [["AUX", "P"]],
+    "regex": ["ないAUXまでPもP"]
+  },
+  {
+    "id": "naimonoka",
+    "parseStrategies": [["AUX"]],
+    "regex": ["ないAUXもの(だろう)?か"]
+  },
+  {
+    "id": "naimonodemonai",
+    "parseStrategies": [["none"]],
+    "regex": ["ない(もの)?でも(ない|なかった|なく|ありません)"]
+  },
+  {
+    "id": "naitomokagiranai",
+    "parseStrategies": [["none"]],
+    "regex": ["ないとも限(らない|らなかった|らなく|りません)"]
+  },
+  {
+    "id": "nakushite",
+    "parseStrategies": [["N"]],
+    "regex": ["Nなくして"]
+  },
+  {
+    "id": "nanshiro",
+    "parseStrategies": [["none"]],
+    "regex": ["何しろ"]
+  },
+  {
+    "id": "nashini",
+    "parseStrategies": [["N"]],
+    "regex": ["N(なしに|なしでは)"]
+  },
+  {
+    "id": "naradeha",
+    "parseStrategies": [["N"]],
+    "regex": ["Nならでは"]
+  },
+  {
+    "id": "naraizashrazu",
+    "parseStrategies": [["N"]],
+    "regex": ["N(ならいざ知らず|はいざ知らず)"]
+  },
+  {
+    "id": "nari",
+    "parseStrategies": [["V-dict", "P"]],
+    "regex": ["V-DICT-FORMなりP"]
+  },
+  {
+    "id": "nari nari",
+    "parseStrategies": [["V-dict", "N", "P"]],
+    "regex": ["(V-DICT-FORM|N)なりP.*(V-DICT-FORM|N)なりP"]
+  },
+  {
+    "id": "narini",
+    "parseStrategies": [["P"]],
+    "regex": ["なりP(に|の)P"]
+  },
+  {
+    "id": "narini",
+    "parseStrategies": [["none"]],
+    "regex": ["なりとも"]
+  },
+  {
+    "id": "niataisuru",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["に値するV-DICT-FORM"]
+  },
+  {
+    "id": "niatte",
+    "parseStrategies": [["N"]],
+    "regex": ["Nにあって"]
+  },
+  {
+    "id": "nihikikaete",
+    "parseStrategies": [["none"]],
+    "regex": ["(の)?にひきかえ/のにひきかえて"]
+  },
+  {
+    "id": "nitarumade",
+    "parseStrategies": [["N"]],
+    "regex": ["Nに至るまで"]
+  },
+  {
+    "id": "nitatteha",
+    "parseStrategies": [["N"]],
+    "regex": ["Nに至っては"]
+  },
+  {
+    "id": "ni iwasereba",
+    "parseStrategies": [["N"]],
+    "regex": ["Nに言わせれば"]
+  },
+  {
+    "id": "ni kakatteiru",
+    "parseStrategies": [["none"]],
+    "regex": ["にかかっている"]
+  },
+  {
+    "id": "ni katakunai",
+    "parseStrategies": [["V-dict", "N"]],
+    "regex": ["(V-DICT-FORM|N)にかたくない"]
+  },
+  {
+    "id": "ni matsuwaru",
+    "parseStrategies": [["N"]],
+    "regex": ["Nにまつわる"]
+  },
+  {
+    "id": "ni mohodogaru",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["にもほどがあるV-DICT-FORM"]
+  },
+  {
+    "id": "ni momashite",
+    "parseStrategies": [["N"]],
+    "regex": ["Nにもまして"]
+  },
+  {
+    "id": "ni nottotte",
+    "parseStrategies": [["N"]],
+    "regex": ["Nに則って"]
+  },
+  {
+    "id": "ni sakigakete",
+    "parseStrategies": [["N"]],
+    "regex": ["Nに先駆けて"]
+  },
+  {
+    "id": "ni shitatte",
+    "parseStrategies": [["none"]],
+    "regex": ["にしたって|にしたところで"]
+  },
+  {
+    "id": "ni shite",
+    "parseStrategies": [["N", "P", "V-stem"]],
+    "regex": ["NにPしV-stemてP"]
+  },
+  {
+    "id": "ni sokushite",
+    "parseStrategies": [["N"]],
+    "regex": ["N(に即し|に即して|に即した)"]
+  },
+  {
+    "id": "ni taeru",
+    "parseStrategies": [["N", "P", "V-dict", "V-dict-replace"]],
+    "regex": ["(V-DICT-FORM|N)にPたえるV-DICT-FORM"]
+  },
+  {
+    "id": "ni tariru",
+    "parseStrategies": [["N", "P", "V-dict", "V-dict-replace"]],
+    "regex": ["(V-DICT-FORM|N)にP(足る|足りる)V-DICT-FORM"]
+  },
+  {
+    "id": "ni tarinai",
+    "parseStrategies": [["V-dict"]],
+    "regex": ["V-DICT-FORMに足りない"]
+  },
+  {
+    "id": "ni terashite",
+    "parseStrategies": [["N"]],
+    "regex": ["Nに照らして"]
+  },
+  {
+    "id": "ni todomarazu",
+    "parseStrategies": [["none"]],
+    "regex": ["にとどまらず"]
+  },
+  {
+    "id": "niha oyobanai",
+    "parseStrategies": [["none"]],
+    "regex": ["に(は)?((及|およ)ばない|(及|およ)ばなく|(及|およ)ばなく|(及|およ)びません)"]
+  },
+  {
+    "id": "ni yorazu",
+    "parseStrategies": [["N"]],
+    "regex": ["Nによらず"]
+  },
+  {
+    "id": "noitaru",
+    "parseStrategies": [["N"]],
+    "regex": ["Nの至り"]
+  },
+  {
+    "id": "nokiwami",
+    "parseStrategies": [["N"]],
+    "regex": ["Nの極み"]
+  },
+  {
+    "id": "nomika",
+    "parseStrategies": [["N"]],
+    "regex": ["Nのみか"]
+  },
+  {
+    "id": "nonannotte",
+    "parseStrategies": [["none"]],
+    "regex": ["のなんのって"]
+  },
+  {
+    "id": "o fumaete",
+    "parseStrategies": [["N"]],
+    "regex": ["N(を踏まえ|を踏まえて)"]
+  },
+  {
+    "id": "o hete",
+    "parseStrategies": [["N"]],
+    "regex": ["Nを経て"]
+  },
+  {
+    "id": "o iikotoni",
+    "parseStrategies": [["none"]],
+    "regex": ["のをいいことに|なのをいいことに"]
+  },
+  {
+    "id": "o kagiri",
+    "parseStrategies": [["N"]],
+    "regex": ["N(を限りに|限りで)"]
+  },
+  {
+    "id": "o kanete",
+    "parseStrategies": [["N"]],
+    "regex": ["N(を兼ねて|も兼ねて)"]
+  },
+  {
+    "id": "o kawakirini",
+    "parseStrategies": [["none"]],
+    "regex": ["を皮切りに(して)?|を皮切りとして"]
+  },
+  {
+    "id": "o kini",
+    "parseStrategies": [["N"]],
+    "regex": ["Nを機に"]
+  },
+  {
+    "id": "o kijienai",
+    "parseStrategies": [["N"]],
+    "regex": ["N(を禁じ得ない|を禁じ得なく|を禁じ得なかった|を禁じ得ません)"]
+  },
+  {
+    "id": "o monotomesezu",
+    "parseStrategies": [["none"]],
+    "regex": ["をものともせず"]
+  },
+  {
+    "id": "o motte",
+    "parseStrategies": [["N"]],
+    "regex": ["Nをもって"]
+  },
+  {
+    "id": "o yoginakusareru",
+    "parseStrategies": [["N"]],
+    "regex": ["Nを余儀なくされる"]
+  },
+  {
+    "id": "o yosoni",
+    "parseStrategies": [["N"]],
+    "regex": ["NをよそNに"]
+  },
+  {
+    "id": "omoi o suru",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["思いをするV-DICT-FORM"]
+  },
+  {
+    "id": "orini",
+    "parseStrategies": [["none"]],
+    "regex": ["折に"]
+  },
+  {
+    "id": "oyoso",
+    "parseStrategies": [["ADV"]],
+    "regex": ["およそADV"]
+  },
+  {
+    "id": "samonaito",
+    "parseStrategies": [["ADV"]],
+    "regex": ["さもADVないと|さもADVなければ"]
+  },
+  {
+    "id": "sazo",
+    "parseStrategies": [["ADV"]],
+    "regex": ["さぞ(かし)?ADV"]
+  },
+  {
+    "id": "shimatsu",
+    "parseStrategies": [["V-dict"]],
+    "regex": ["V-DICT-FORM始末"]
+  },
+  {
+    "id": "samo",
+    "parseStrategies": [["ADV"]],
+    "regex": ["さもADV"]
+  },
+  {
+    "id": "sorenarini",
+    "parseStrategies": [["none"]],
+    "regex": ["それなりに|それなりの"]
+  },
+  {
+    "id": "sounimonai",
+    "parseStrategies": [["V-stem"]],
+    "regex": ["V-stem(そうにもない|そうにもなかった|そうにもなく|そうにもありません)"]
+  },
+  {
+    "id": "tada nomida",
+    "parseStrategies": [["N", "V-casual"]],
+    "regex": ["ただ.*(N|V-casual)のみ(だ|で|じゃ)"]
+  },
+  {
+    "id": "ta hyoushini",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なかっ)?(た|だ))拍子に"]
+  },
+  {
+    "id": "tameshiganai",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なかっ)?(た|だ))ためしがない"]
+  },
+  {
+    "id": "taritomo",
+    "parseStrategies": [["N"]],
+    "regex": ["Nたりとも"]
+  },
+  {
+    "id": "shunkan",
+    "parseStrategies": [["N", "V-dict-replace"]],
+    "regex": ["Nの瞬間|V-DICT-FORM((なかっ)?(た|だ))瞬間"]
+  },
+  {
+    "id": "tekkiri",
+    "parseStrategies": [["ADV"]],
+    "regex": ["てっきりADV"]
+  },
+  {
+    "id": "te karatoiumono",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なく)?(て|で))からというもの"]
+  },
+  {
+    "id": "kanawanai",
+    "parseStrategies": [["V-neg-stem"]],
+    "regex": ["かなわV-negない"]
+  },
+  {
+    "id": "te made",
+    "parseStrategies": [["V-dict-replace", "P"]],
+    "regex": ["V-DICT-FORM((なく)?(て|で))PまでP"]
+  },
+  {
+    "id": "te miseru",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なく)?(て|で))みせるV-DICT-FORM"]
+  },
+  {
+    "id": "te hajimaranai",
+    "parseStrategies": [["P"]],
+    "regex": ["((なく)?(て|で))PもP始ま(らない|らなく|らなかった|りません)"]
+  },
+  {
+    "id": "temosashitsukaenai",
+    "parseStrategies": [["P"]],
+    "regex": ["((なく)?(て|で))Pも差し支え(ない|なく|なかった|ません)"]
+  },
+  {
+    "id": "te shikaru beki da",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なく)?(て|で))しかるV-DICT-FORMべき"]
+  },
+  {
+    "id": "tteba",
+    "parseStrategies": [["P"]],
+    "regex": ["ってPばP"]
+  },
+  {
+    "id": "te shikaru beki da",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["V-DICT-FORM((なく)?(て|で))や(むV-DICT-FORM|み)(ない|なく|なかった|ません)"]
+  },
+  {
+    "id": "to aimatte",
+    "parseStrategies": [["N"]],
+    "regex": ["Nと(が)?相まって"]
+  },
+  {
+    "id": "to areba",
+    "parseStrategies": [["none"]],
+    "regex": ["とあれば"]
+  },
+  {
+    "id": "to bakari ni",
+    "parseStrategies": [["none"]],
+    "regex": ["とばかりに"]
+  },
+  {
+    "id": "to iedomo",
+    "parseStrategies": [["N"]],
+    "regex": ["Nといえども"]
+  },
+  {
+    "id": "to ittatokoro",
+    "parseStrategies": [["N"]],
+    "regex": ["N(というところ|といったところ)"]
+  },
+  {
+    "id": "to iumono",
+    "parseStrategies": [["N"]],
+    "regex": ["Nというもの"]
+  },
+  {
+    "id": "to iu wake",
+    "parseStrategies": [["N"]],
+    "regex": ["というわけN"]
+  },
+  {
+    "id": "to iwazu",
+    "parseStrategies": [["N"]],
+    "regex": ["Nといわず.*Nといわず"]
+  },
+  {
+    "id": "tokitara",
+    "parseStrategies": [["N"]],
+    "regex": ["Nときたら"]
+  },
+  {
+    "id": "tokiteiru",
+    "parseStrategies": [["N"]],
+    "regex": ["ときNている"]
+  },
+  {
+    "id": "tokoro kara",
+    "parseStrategies": [["none"]],
+    "regex": ["ところから"]
+  },
+  {
+    "id": "to mirareru",
+    "parseStrategies": [["V-dict-replace"]],
+    "regex": ["と見られるV-DICT-FORM"]
+  },
+  {
+    "id": "to miruya",
+    "parseStrategies": [["V-casual"]],
+    "regex": ["V-casualとみるや"]
+  },
+  {
+    "id": "to monaku",
+    "parseStrategies": [["V-dict"]],
+    "regex": ["V-DICT-FORM(ともなく|ともなしに)"]
+  },
+  {
+    "id": "tomonaruto",
+    "parseStrategies": [["none"]],
+    "regex": ["と(も)?なると|と(も)?なれば"]
+  },
+  {
+    "id": "tomosureba",
+    "parseStrategies": [["none"]],
+    "regex": ["ともすれば"]
+  },
+  {
+    "id": "toomoikiya",
+    "parseStrategies": [["none"]],
+    "regex": ["と思いきや"]
+  },
+  {
+    "id": "toriwake",
+    "parseStrategies": [["ADV"]],
+    "regex": ["とりわけADV"]
+  },
+  {
+    "id": "tossani",
+    "parseStrategies": [["N", "P"]],
+    "regex": ["とっさNにP"]
+  },
+  {
+    "id": "tahaiumonono",
+    "parseStrategies": [["none"]],
+    "regex": ["とはいうものの"]
+  },
+  {
+    "id": "ha oroka",
+    "parseStrategies": [["N", "P"]],
+    "regex": ["NはPおろかN"]
+  },
+  {
+    "id": "ha sateoki",
+    "parseStrategies": [["N"]],
+    "regex": ["Nはさておき"]
+  },
+  {
+    "id": "yainaya",
+    "parseStrategies": [["V-dict"]],
+    "regex": ["V-DICT-FORMや否や"]
+  },
+  {
+    "id": "yashinai",
+    "parseStrategies": [["V-stem"]],
+    "regex": ["V-stemやしない"]
+  },
+  {
+    "id": "youga maiga",
+    "parseStrategies": [["V-vol-stem", "V-dict"]],
+    "regex": ["V-vol-stemう(が|と).*(V-DICT-FORM|し|こ)まい(と|が)"]
+  },
+  {
+    "id": "youka maika",
+    "parseStrategies": [["V-vol-stem", "V-dict"]],
+    "regex": ["V-vol-stemうか.*V-DICT-FORMまいか"]
+  },
+  {
+    "id": "you mono nara",
+    "parseStrategies": [["V-vol-stem"]],
+    "regex": ["V-vol-stemうものなら"]
+  },
+  {
+    "id": "you niyotteha",
+    "parseStrategies": [["V-stem"]],
+    "regex": ["V-stemようによっては"]
+  },
+  {
+    "id": "yueni",
+    "parseStrategies": [["P"]],
+    "regex": ["(がP)?ゆえ(のP|にP)?"]
+  },
+  {
+    "id": "zujimai",
+    "parseStrategies": [["V-neg-stem"]],
+    "regex": ["V-negずじまい"]
+  },
+  {
+    "id": "zukume",
+    "parseStrategies": [["N"]],
+    "regex": ["Nずくめ"]
+  },
+  {
+    "id": "zutomo",
+    "parseStrategies": [["V-neg-stem"]],
+    "regex": ["V-negずとも"]
+  }
+]
