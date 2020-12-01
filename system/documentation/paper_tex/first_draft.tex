@@ -1,0 +1,262 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[margin=.9in]{geometry}
+\usepackage[round]{natbib}
+
+\title{\textbf{Japanese Reading Difficulty Classification for Non-Native Language Learners}}
+\author{Nicholas Ramkissoon \\ nr1610@nyu.edu}
+\date{}
+
+\begin{document}
+
+
+\maketitle
+
+\begin{abstract}
+    This paper introduces a system for predicting the reading difficulty level of Japanese
+    text for non-native language learners. The system leverages both grammar-based and vocabulary-based
+    features in a text to produce a difficulty classification. 
+    Evaluation results from testing on a collection of
+    text from varying difficulty levels and sources show a classification accuracy of 66.67\% across 5 
+    difficulty levels with significantly more
+    consistent performance at each level compared to simpler baselines.
+
+\end{abstract}
+
+\section{Introduction}
+
+Classifying text based on reading difficulty is a common task in natural language processing. 
+Reading difficulty can mean several different things depending on the task, language, and for whom we are
+classifying text for. This paper introduces a system for classifying Japanese text into reading difficulty levels
+for non-native language learners. Therefore, for the scope of this paper, reading difficulty is defined as the readability of a given Japanese text for
+a non-native student of the language. 
+\par
+Typically, Japanese is taught with an emphasis on learning vocabulary and specific 
+grammatical constructions that students use to form and understand sentences. 
+The vocabulary and grammar gradually becomes more nuanced and complex at higher levels of study. 
+Text that is too easy would provide little
+useful practice, and text that is too hard, especially text with abundant kanji and vocabulary unknown to
+the reader, can be impossible to read entirely. Because of this, care must be taken to select appropriately leveled 
+material to study from. Of course, textbooks provide material reviewed by language teaching experts and designed with students in mind. However, 
+if one wished to go beyond textbooks, millions of websites, books, and other media are available, but most of these materials are not 
+labeled by difficulty with respect to language learners. Further, if one wanted to determine the difficulty of the text,
+they would have to read it anyways, which can be a waste of time because of the already mentioned points about too easy and too difficult texts. 
+As a result, teachers and students face the problem of finding material
+at an appropriate difficulty level to study from. The system proposed will be a possible solution to this problem by
+assigning reading difficulty levels to Japanese texts from various sources using both grammatical and vocabulary features.
+
+
+\section{Related Work}
+
+There has been several different proposed methods of evaluating Japanese text difficulty in previous work. 
+Earlier methods incorporated more general readability features such as average sentence length and 
+comma to period ratio \citep{computerReadabilityFormula}. These features are effective in predicting difficulty
+in a wide range of native-level text including technical materials such as college textbooks and juridical texts.
+More recent work has focused on classifying Japanese text by reading difficulty from the perspective 
+of non-native language learners. The readability features 
+used in this work better align with what is taught to students in a Japanese language class and textbooks.
+These features can be broadly categorized into grammar-based and vocabulary-based features. 
+\par
+In a paper tackling the same problem of text difficulty evaluation for language learners, \textit{grammatical templates}, 
+grammar units students learn from class and textbooks, were shown to be important 
+features in predicting Japanese text difficulty. By parsing text and calculating the average number of 
+grammatical templates at different difficulty levels, the difficulty level
+of material from previous Japanese Language Proficiency Test questions and textbooks 
+can be classified with 87.7\% accuracy \citep{grammarTemplate}. In a later study, Liu and Matsumoto built upon 
+the idea of extracting grammatical features while also considering similarity features between
+Chinese and Japanese use of kanji in select words to estimate sentence complexity specifically for 
+Chinese-speaking learners of Japanese \citep{chineseSpeaker}. 
+\par
+Other work has focused on vocabulary difficulty in text. In a study on lexical simplification for non-native speakers \citep{wordRegression},
+the methods used for determining vocabulary difficulty involved checking against a list of already-classified words and
+using a regression model to determine difficulty for any unlisted words.  
+\par
+The approach used by the proposed system will also rely on grammatical features, but will also 
+rely on vocabulary difficulty features in order to predict text difficulty. The system will extract 
+usages of specific grammar and vocabulary words 
+
+\section{Methods and System}
+
+\subsection{Difficulty Classification Standard}
+
+Because the system will be classifying text based on reading difficulty from the point of view of a non-native speaker,
+it will follow the standard of the Japanese Language Proficiency Test (JLPT). The JLPT is widely considered to be the standard 
+of Japanese language proficiency examinations as it is often used by Japanese companies for hiring foreigners and by the Japanese government
+for immigration purposes. The JLPT has 5 different difficulty levels, N5 through N1, N5 being the easiest and N1 being the most advanced.
+For more context, attaining N5 can be approximated to one semester college course in beginner Japanese, and attaining N1 suggests the ability to
+consume and understand native-level materials. A more in-depth overview of each of the levels is on the JLPT website\footnote[1]{https://www.jlpt.jp/e}.
+The system takes in Japanese text and produces a level 1 through 5 corresponding to the text's predicted JLPT level.
+
+\subsection{Data}
+
+\subsubsection{Corpora}
+
+In order to develop and test the system, a corpus consisting of a list of different Japanese text, each labeled with their
+respective JLPT levels, is required. I compiled a corpus of classified text from several sources. 
+\begin{enumerate}
+    \item Official JLPT practice problem sets and reading material are available online. The JLPT website provides authoritative examples of Japanese text from 
+    each difficulty level. 
+    \item NHK, Japan's national broadcaster, provides simplified versions of their news articles aimed
+    at the N3 level on their website\footnote[2]{https://www3.nhk.or.jp/news/easy}. 
+    \item \textit{Genki II} \citep{Genki} is a standard textbook for the second semester of a beginner Japanese course. It contains 
+    example sentences and reading exercises at the N4 level.
+    \item Unofficial JLPT practice resources and websites\footnote[3]{https://japanesetest4you.com, http://www.tanos.co.uk/jlpt} provide labeled reading exercises and 
+    example sentences.
+\end{enumerate}
+
+In related work with similar tasks, manually built corpora consisting of only official JLPT materials and textbook material
+were used \citep{grammarTemplate}. However, these corpora only represent a fraction of the study material available for language learners. By including material from multiple
+other learning resources on the web, the system will be able to better predict text difficulty of material a language learner is likely
+to encounter. 
+In total, 520 separate texts consisting of 91,206 words were collected and split into training, development, and test corpora.
+
+\subsubsection{JLPT Words, Kanji, and Grammar}
+
+The system parses sentences for specific words and grammatical constructions that are representative
+of a specific JLPT level. In order to do this, it leverages a pre-made list of labeled words, kanji and 
+grammatical constructions to check against. The list of classified vocabulary words, and kanji is sourced from 
+three online resources\footnote[4]{https://japanesetest4you.com, http://www.tanos.co.uk/jlpt, \par https://en.wiktionary.org/wiki/Appendix:JLPT}.
+A word/kanji is included in the final list if it is present in at least two of these resources. A similar method is 
+used by utilizing the same online resources with grammar dictionaries \citep{IntermediateGrammar, AdvancedGrammar} and \textit{Genki}.
+In total, the final vocabulary, kanji, and grammar lists consists of 4,859, 1766, and 582 items respectively.
+
+\subsection{System Overview}
+
+\subsubsection{Features}
+
+For each input text, the system calculates 10 features:
+\begin{enumerate}
+    \item The distributions of N5-N1 words in the text (5 features)
+    \item The distributions of N5-N1 grammatical constructions in the text (5 features)
+\end{enumerate}
+
+Related work has shown that the distribution of grammatical constructions of a text is an effective 
+predictor of its difficulty \citep{grammarTemplate, chineseSpeaker}, however the difficulty level of the words in the text should 
+also be considered. Table 1 and Table 2 show the average distributions of word and grammar levels respectively in the training corpus.
+Both tables show similar trends in distributions, N5 vocabulary/grammar makes up a large portion of text of \textit{all} levels,
+and what differentiates one level, \textit{x}, from a more difficult level, \textit{y}, is the proportion of \textit{y}-level 
+grammar and vocabulary.
+
+\begin{table}[h!]
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+                     & N1 Texts & N2 Texts & N3 Texts & N4 Texts & N5 Texts \\ \hline
+            N1 Words & 7.331\%         & 3.154\%         & 3.703\%         & 0.001\%         &  0.00\%        \\ \hline
+            N2 Words & 8.242\%         & 7.409\%         & 3.142\%         & 0.516\%         &  0.328\%        \\ \hline
+            N3 Words & 28.301\%         & 24.745\%         & 17.676\%         & 4.031\%         & 4.926\%         \\ \hline
+            N4 Words & 13.483\%         & 13.990\%         & 16.386\%          & 9.302\%         & 4.269\%        \\ \hline
+            N5 Words & 42.641\%         & 50.700\%         & 59.090\%         & 86.046\%         & 90.476\%          \\ \hline
+            Total    & 100\%         & 100\%         & 100\%         & 100\%         & 100\%         \\ \hline
+        \end{tabular}
+        \caption{Distribution of Word Levels for each JLPT Level in Training Corpus}
+        \label{tab:table1}
+    \end{center}
+\end{table}
+
+\begin{table}[h!]
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+                     & N1 Texts & N2 Texts & N3 Texts & N4 Texts & N5 Texts \\ \hline
+            N1 Grammar & 1.683\%  & 1.171\%  & 0.410\%  &   0.232\%&  0.502\%       \\ \hline
+            N2 Grammar & 5.287\%  & 4.054\%  &  2.642\% & 1.784\%  &  1.758\%        \\ \hline
+            N3 Grammar & 9.670\%  &  8.443\% &  5.512\% & 2.404\%  &  1.005\%        \\ \hline
+            N4 Grammar & 18.700\% & 22.521\% & 17.949\% &  20.015\%&  16.834\%          \\ \hline
+            N5 Grammar & 64.658\% & 63.808\% & 73.485\% & 75.562\% & 79.899\%         \\ \hline
+            Total    &   100\%       &  100\%        &  100\%        &   100\%       &   100\%       \\ \hline
+        \end{tabular}
+        \caption{Distribution of Grammar Construction Levels for each JLPT Level in Training Corpus}
+        \label{tab:table2}
+    \end{center}
+\end{table}
+
+\subsubsection{Word and Grammar Level Extraction}
+
+The system uses the open-source text segmentation and POS tagger MeCab\footnote[4]{https://taku910.github.io/mecab}
+for processing text at the sentence level. Sentence words are checked against the list of classified vocabulary words (Section 3.2.2). 
+If a words is unlisted, the system relies a regression model that was trained on the listed words to predict the JLPT level. This
+regression model uses the word's unigram frequency in the Balanced Corpus of Contemporary Written Japanese (BCCWJ) and the mode and hardest
+kanji level in the word (determined using the kanji list described in Section 3.2.2) to predict the words JLPT level. 
+For grammar feature extraction, the system uses the POS tags produced by MeCab and regular expressions to 
+parse for each of the listed grammar items (Section 3.2.2). 
+\par
+The word/grammar level distribution features (Section 3.3.1) are then calculated for the entire text. 
+**FIGURE** illustrates the process of level extraction and calculations on a simple sentence. 
+
+\subsubsection{Classification Algorithm}
+
+Support Vector Machines (SVMs) produce the final difficulty level prediction for the text. 
+
+
+\section{Experiments}
+
+\subsection{Baselines}
+
+Baseline experiments were performed to compare to the main system performance. The results of these expirements
+are included in the subsequent Results and Discussion sections of this paper. The following baselines were used:
+
+\begin{enumerate}
+    \item \textbf{Hardest Word Baseline} - this baseline simply assigns the JLPT level of the hardest word in a text to that text
+    \item \textbf{Average Sentence Length Baseline} - a regression model was trained to assign a JLPT level based on the average sentence length in an input text, sentence length is equal to number of characters
+\end{enumerate}
+
+\subsection{System}
+
+
+\section{Results}
+
+\subsection{Evaluation Metrics}
+
+The evaluation metric for the system will be accuracy. Specifically, overall accuracy is calculated as the total number of correctly classified documents divided by the 
+total number of documents being tested. Another accuracy metric, adjacent-level accuracy, will be used as a metric with looser restrictions on what is 
+considered a correct classification. Adjacent-level accuracy will define a correct classification as one where the classification is
+within 1 level of the true classification (i.e. a classification of 2 or 4 will be considered correct if the true classification is 3). 
+Depending on the use case, classifying text into 5 distinct JLPT levels may be too granular, and a system that effectively predicts
+a ballpark figure of the difficulty level could suffice. The accuracies for each level is also reported because 
+it is useful to see if the system and baselines have a high variance in accuracies across difficulty levels.
+
+\subsection{System and Baseline Results}
+
+\begin{table}[h!]
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        & \begin{tabular}[c]{@{}c@{}}Overall \\ Accuracy\end{tabular} & \begin{tabular}[c]{@{}c@{}}Adj-level \\ Accuracy\end{tabular} & \begin{tabular}[c]{@{}l@{}}N1\end{tabular} & \begin{tabular}[c]{@{}c@{}}N2 \end{tabular} & \begin{tabular}[c]{@{}l@{}}N3 \end{tabular} & \begin{tabular}[c]{@{}l@{}}N4 \end{tabular} & \begin{tabular}[c]{@{}l@{}}N5 \end{tabular} \\ \hline
+    \begin{tabular}[c]{@{}c@{}}Hardest Word \\ Baseline\end{tabular}            & 50\%                                                        & 91\%                                                               & 88.46\%                                               & 19.04\%                                                & 35.00\%                                                & 38.10\%                                                & 66.67\%                                                \\ \hline
+    \begin{tabular}[c]{@{}c@{}}Avg Sentence \\Length Baseline\end{tabular} & 41\%                                                        & 94\%                                                               & 38.46\%                                               & 57.14\%                                                & 25.00\%                                                & 66.67\%                                                & 0.00\%                                                 \\ \hline
+    System                                                                      & 59\%                                                        & 91\%                                                               & 50.00\%                                               & 71.43\%                                                & 55.00\%                                                & 61.90\%                                                & 58.33\%                                                \\ \hline
+\end{tabular}
+\caption{Baseline and System Results}
+\label{tab:table3}
+\end{table}
+
+\section{Discussion}
+
+Comparing the results from the two baselines and main system in Table 3, all 
+three methods of predicting difficulty level score highly in adjacent-level accuracy, 
+indicating that it is relatively easy to predict within the general range of the true difficulty level.
+The hardest word baseline and main system score similarly in overall accuracy and significantly higher than
+the average sentence length baseline. 
+\par
+When comparing accuracies at each level, there is significantly higher variance in accuracies between levels
+in the baselines than the main system. Furthermore, the baselines tend to overestimate 
+the difficulty of text. From analysis of the confusion matrices, the hardest word baseline
+classified most level 2 documents as level 1, resulting in an 88.46\% for N1 and a poor 19.04\% accuracy for N2.
+The average sentence length baseline failed to classify any N5 texts, instead classifying them as N4-N3.
+\par
+Despite performing similar to the baselines in term of overall and adjacent-level accuracy, 
+the main system performs significantly more consistently across all difficulty levels. 
+\par
+
+
+
+\section{Conclusion and Future Work}
+
+By using both vocabulary difficulty and grammatical features of a text, the system is 
+able to 
+
+\newpage
+\bibliographystyle{plainnat}
+
+\bibliography{bib}
+
+\end{document}
